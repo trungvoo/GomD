@@ -1,0 +1,1053 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gabarito:wght@400;500;600;700;800&family=Ms+Madi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap'); */
+@font-face{
+    font-family: font-AkiraExpanded;
+    src: url(fonts/FontsFree-Net-Akira-Expanded-Demo.ttf);
+}
+
+@font-face {
+    font-family: font-LeferiRegular;
+    src: url(fonts/LeferiBaseRegular.ttf);
+}
+
+@font-face {
+    font-family: font-KotraBold;
+    src: url(fonts/KOTRA_BOLD\ Bold.ttf);
+}
+
+@font-face {
+    font-family: font-LeferiBold;
+    src: url(fonts/LeferiBaseBold.ttf);
+}
+
+body{
+    /* font-family: 'Bungee Spice', cursive;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Ms Madi', cursive;
+    font-family: 'Roboto', sans-serif; */
+    font-family: font-LeferiRegular;
+    height: 100%;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #FFA237 0%, #E95218 100%) 0% 0% no-repeat padding-box;
+}
+.wrap-main{
+
+}
+
+.wrap-main-section{
+    margin-top: 15%;
+    padding-bottom: 15%;
+}
+
+/*#region section-1*/
+
+.section-1 img{
+    max-width: 449px;
+    max-height: 555px;
+}
+
+/*#endregion section-1*/
+
+/*#region section-2*/
+
+
+
+.section-2 img {
+    max-width: 449px;
+    max-height: 412px;
+}
+
+.section-2{
+    position: relative;
+    max-width: 1197px;
+    max-height: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25%;
+    overflow: hidden;
+}
+
+.section-2::before {
+    content: '';
+    top: 27%;
+    left: 45px;
+    position: absolute;
+    width: 90%;
+    height: 56%;
+    transform: matrix(0.75, 0.66, -0.66, 0.75, 0, 0);
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.section-2-title{
+    font-family: font-AkiraExpanded;
+    margin: auto;
+    max-width: 1072px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-weight: 800;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.section-2-description{
+    margin: auto;
+    text-align: center;
+    max-width: 631px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.section-2-btn{
+    font-family: font-KotraBold;
+    background: #FF5100 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.section-2-btn:hover {
+    background: #db4703 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+/*#endregion section-2*/
+
+/*#region section-3*/
+
+
+
+.section-3{
+    margin-top: 0;
+}
+
+.section-3 img{
+    margin-top: 0;
+    max-width: 761px;
+    max-height: 603px;
+}
+
+.section-3-title{
+    font-family: font-AkiraExpanded;
+    margin-top: 10%;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-3-decscription {
+    font: normal normal normal 20px/30px font-LeferiRegular;
+    letter-spacing: 0px;
+}
+/*#endregion section-3*/
+
+/*#region section-4*/
+
+
+
+.section-4{
+    margin-top: 0;
+}
+
+.section-4-content img{
+    width: 265px;
+    height: 300px;
+}
+
+.section-4-content-desc {
+    margin: auto;
+    width: 265px;
+    height: 95px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 15px;
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#endregion section-4*/
+
+/*#region section-5*/
+
+.section-5-nft-title{
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.section-5-nft-desc {
+    margin: auto;
+    width: 765px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.section-5-nft-section1{
+    margin: auto;
+    margin-top: 15%;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.section-5-nft-section1::before{
+    content: '';
+    top: 83px;
+    left: -60px;
+    position: absolute;
+    width: 120%;
+    height: 70%;
+    transform: matrix(-0.75, 0.66, -0.66, -0.75, 0, 0);
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.section-5-nft-section2{
+    margin-top: 15%;
+}
+
+.section-5-nft-section2 img{
+    width: 256px;
+    height: 311px;
+}
+
+.section-5-nft-section2-title{
+    font-family: font-AkiraExpanded;
+    margin-top: 3%;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-5-nft-section2-desc {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+
+
+
+.section-5-nft-section3 {
+    margin-top: 15%;
+}
+
+.section-5-nft-section3 img {
+    width: 305px;
+    height: 311px;
+}
+
+.section-5-nft-section3-title {
+    font-family: font-AkiraExpanded;
+    margin-top: 3%;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-5-nft-section3-desc {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+
+
+.section-5-nft-section4 {
+    margin-top: 15%;
+}
+
+.section-5-nft-section4 img {
+    width: 352px;
+    height: 302px;
+}
+
+.section-5-nft-section4-title {
+    font-family: font-AkiraExpanded;
+    margin-top: 3%;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-5-nft-section4-desc {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+/*#endregion section-5*/
+
+/*#region section-6*/
+
+
+
+.section-6-usage-title{
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-6-usage-desc {
+    font-size: 20px;
+    width: 1069px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.section-6-content img {
+    width: 207px;
+    height: 268px;
+}
+
+.section-6-content-desc {
+    margin: auto;
+    width: 284px;
+    height: 97px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    border-radius: 15px;
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#endregion section-6*/
+
+/*#region section-7*/
+
+
+.section-7-title{
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
+.section-7-desc{
+    font-size: 20px;
+}
+
+.section-7-content{
+    margin-top: 10%;
+}
+
+.section-7-content-title{
+    font-family: font-LeferiBold;
+    font-size: 31px;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.section-7-content-wrap{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.section-7-content-item1,
+.section-7-content-item2 {
+    width: auto;
+    padding: 0;
+
+}
+
+.section-7-content-item-child{
+    width: 466px;
+    height: 97px;
+    border-radius: 15px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    margin: 10px 5px;
+}
+
+.section-7-content-item1 .section-7-content-item-child:nth-child(1){
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+.section-7-content-item1 .section-7-content-item-child:nth-child(2) {
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+.section-7-content-item1 .section-7-content-item-child:nth-child(3) {
+    background: #DBDBDB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+.section-7-content-item1 .section-7-content-item-child:nth-child(4) {
+    background: #BEBEBE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+.section-7-content-item2 .section-7-content-item-child:nth-child(1) {
+    background: #C9C9C9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+.section-7-content-item2 .section-7-content-item-child:nth-child(2) {
+    background: #B7B7B7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+.section-7-content-item2 .section-7-content-item-child:nth-child(3) {
+    background: #878787 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+.section-7-content-item2 .section-7-content-item-child:nth-child(4) {
+    background: #6B6B6B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+
+.section-7-content-desc{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.section-7-content-bottom-title{
+    font-family: font-LeferiBold;
+    margin-top: 10%;
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.section-7-content-bottom-desc {
+    margin: auto;
+    width: 454px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+
+
+/*#endregion section-7*/
+
+/*#region section-8*/
+
+.section-8-title {
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+}
+
+.section-8-content{
+    margin-top: 5%;
+}
+
+.content-web__item{
+    margin: 0 3px;
+    position: relative;
+}
+
+.section-8-content-mobile {
+    display: none;
+}
+
+.content-web__item-info{
+    position: absolute;
+    width: 152px;
+    left: calc(50% - 76px);
+    top: 52%;
+}
+
+.content-web__item-info-name {
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.content-web__item-info-name p{
+    margin: 2px;
+    font-size: 8px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.content-web__item-info-desc {
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.content-web__item img{
+    max-width: 192px;
+}
+
+/*#endregion section-8*/
+
+/*#region section-9*/
+
+.section-9-title{
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+}
+
+.section-9-content{
+    margin-top: 5%;
+}
+
+.section-9-content-sponsor{
+
+}
+
+.section-9-content-sponsor img{
+    max-width: 200px;
+}
+
+.section-9-content-method{
+    margin-top: 40px;
+} 
+
+.section-9-content-method img {
+    max-width: 200px;
+}
+
+/*#endregion section-9*/
+
+/*#region section-10*/
+
+.section-10 {
+    margin-top: 10%;
+    padding-bottom: 3%;
+}
+
+.section-10-content {
+    font-size: 20px;
+    color: #fff;
+}
+
+.section-10-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #E95218;
+    font-size: 20px;
+}
+
+.section-10-social-content {
+    justify-content: center;
+    gap: 30px;
+}
+
+/*#endregion section-10*/
+
+@media only screen and (max-width: 991px) {
+
+    .wrap-main-section {
+            margin-top: 30%;
+            padding-bottom: 20%;
+        }
+
+    /*#region section-1*/
+    
+        .section-1 img {
+            max-width: 187px;
+            max-height: 231px;
+        }
+    
+        /*#endregion section-1*/
+    
+        /*#region section-2*/
+
+    
+        .section-2 img {
+            max-width: 229px;
+            max-height: 209px;
+        }
+    
+        .section-2 {
+            position: relative;
+            max-width: 428px;
+            max-height: 477px;
+            margin-top: 30%;
+            padding-bottom: 35%;
+        }
+    
+        .section-2::before {
+            content: '';
+            top: 19%;
+            left: -5px;
+            position: absolute;
+            width: 100%;
+            height: 56%;
+        }
+    
+        .section-2-title {
+            margin-top: 10%;
+            font-size: 15px;
+        }
+    
+        .section-2-description {
+            max-width: 332px;
+            font-size: 10px;
+        }
+    
+        .section-2-btn {
+            font-size: 13px;
+        }
+
+    
+        /*#endregion section-2*/
+    
+        /*#region section-3*/
+    
+    
+    
+        .section-3 {
+            margin-top: 30%;
+            padding-bottom: 0;
+        }
+    
+        .section-3 img {
+            margin-top: 0;
+            max-width: 332px;
+        }
+    
+        .section-3-title {
+            margin-top: 5%;
+            font-size: 15px;
+        }
+    
+        .section-3-decscription {
+            font: normal normal normal 10px/30px font-LeferiRegular;
+        }
+    
+        /*#endregion section-3*/
+    
+        /*#region section-4*/
+    
+    
+    
+        .section-4 {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+        .section-4-content{
+            margin-top: 10%;
+        }
+    
+        .section-4-content img {
+            width: 119px;
+            height: 135px;
+        }
+    
+        .section-4-content-desc {
+            width: 170px;
+            height: 60px;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+    
+        /*#endregion section-4*/
+    
+        /*#region section-5*/
+    
+        .section-5-nft-title {
+            font-size: 15px;
+        }
+    
+    
+        .section-5-nft-desc {
+            width: 232px;
+            font-size: 10px;
+        }
+    
+        .section-5-nft-section1 {
+            margin: auto;
+            margin-top: 10%;
+            width: 286px;
+            height: 286px;
+            position: relative;
+        }
+
+        .section-5-nft-section1 img{
+            width: 286px;
+            height: 286px;
+        }
+    
+        .section-5-nft-section1::before {
+            top: 55px;
+            left: -30px;
+            position: absolute;
+        }
+    
+        .section-5-nft-section2 {
+            margin-top: 40%;
+        }
+    
+        .section-5-nft-section2 img {
+            width: 123px;
+            height: 150px;
+        }
+    
+        .section-5-nft-section2-title {
+            font-family: font-AkiraExpanded;
+            margin: auto;
+            margin-top: 3%;
+            font-size: 15px;
+            max-width: 220px;
+            
+        }
+    
+        .section-5-nft-section2-desc {
+            margin: auto;
+            font-size: 10px;
+            max-width: 270px;
+        }
+    
+    
+    
+    
+    
+        .section-5-nft-section3 {
+            margin-top: 15%;
+        }
+    
+        .section-5-nft-section3 img {
+            width: 137px;
+            height: 140px;
+        }
+    
+        .section-5-nft-section3-title {
+            margin: auto;
+            margin-top: 3%;
+            font-size: 15px;
+            width: 312px;
+        }
+    
+        .section-5-nft-section3-desc {
+            font-size: 10px;
+            width: 300px;
+            margin: auto;
+        }
+    
+    
+    
+    
+        .section-5-nft-section4 {
+            margin-top: 15%;
+        }
+    
+        .section-5-nft-section4 img {
+            width: 163px;
+            height: 140px;
+        }
+    
+        .section-5-nft-section4-title {
+            margin-top: 3%;
+            font-size: 15px;
+        }
+    
+        .section-5-nft-section4-desc {
+            font-size: 10px;
+            width: 225px;
+            margin: auto;
+        }
+    
+        /*#endregion section-5*/
+    
+        /*#region section-6*/
+    
+    
+    
+        .section-6-usage-title {
+            font-size: 15px;
+        }
+    
+        .section-6-usage-desc {
+            font-size: 10px;
+            width: 239px;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+
+        .section-6-content{
+            margin-top: 10%;
+        }
+    
+        .section-6-content img {
+            width: 121px;
+            height: 131px;
+        }
+    
+        .section-6-content-desc {
+            margin: auto; 
+            width: 155px;
+            height: 55px;
+            font-size: 10px;
+    
+            margin-top: 20px;
+        }
+    
+        /*#endregion section-6*/
+    
+        /*#region section-7*/
+    
+        .section-7{
+            margin-top: 10%;
+        }
+    
+        .section-7-title {
+            font-size: 15px;
+        }
+    
+        .section-7-desc {
+            font-size: 10px;
+        }
+    
+        .section-7-content {
+            margin-top: 5%;
+        }
+    
+        .section-7-content-title {
+            font-size: 15px;
+        }
+    
+        .section-7-content-wrap {
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .section-7-content-item1,
+        .section-7-content-item2 {
+            width: auto;
+            padding: 0;
+        }
+
+        .section-7-content-item-child {
+            width: 256px;
+            height: 54px;
+            font-size: 10px;
+        }
+
+    
+        .section-7-content-item2 .section-7-content-item-child:nth-child(1) {
+            margin-top: 0;
+        }
+    
+    
+        .section-7-content-desc {
+            margin-top: 20px;
+            font-size: 10px;
+        }
+    
+        .section-7-content-bottom-title {
+            margin-top: 10%;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 0px;
+        }
+    
+        .section-7-content-bottom-desc {
+            margin: auto;
+            width: 288px;
+            font-size: 10px;
+        }
+    
+    
+    
+        /*#endregion section-7*/
+    
+        /*#region section-8*/
+
+        .section-8{
+            margin-top: 10%;
+        }
+    
+        .section-8-title {
+            font-size: 15px;
+        }
+    
+        .section-8-content {
+            margin-top: 5%;
+        }
+
+        .section-8-content-web{
+            display: none;
+        }
+        
+        .section-8-content-mobile{
+            display: block;
+            position: relative;
+            padding: 0 20px;
+        }
+    
+        .content-mobile__item {
+            margin: 0 3px;
+            position: relative;
+        }
+    
+        .content-mobile__item-info {
+            position: absolute;
+            width: 152px;
+            left: calc(50% - 76px);
+            top: 52%;
+        }
+    
+        .content-mobile__item-info-name {
+            font-size: 10px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+    
+        .content-mobile__item-info-name p {
+            margin: 2px;
+            font-size: 8px;
+            font-weight: 500;
+            width: 100%;
+        }
+    
+        .content-mobile__item-info-desc {
+            margin-top: 5px;
+            font-size: 8px;
+            font-weight: 500;
+        }
+    
+        .content-mobile__item img {
+            max-width: 160px;
+        }
+
+        .swiper-btn-prev,
+        .swiper-btn-next{
+            position: absolute;
+            top: calc(50% - 22px);
+            color: #D1D1D1;
+            font-size: 30px;
+        }
+
+        .swiper-btn-prev{
+            left: -5px;
+        }
+
+        .swiper-btn-next {
+            right: -5px;
+        }
+
+
+        .swiper-button-disabled{
+            color: #d1d1d159;
+        }
+
+    
+        /*#endregion section-8*/
+    
+        /*#region section-9*/
+
+        .section-9{
+            margin-top: 10%;
+        }
+    
+        .section-9-title {
+            font-size: 15px;
+        }
+    
+        .section-9-content {
+            margin-top: 5%;
+        }
+    
+        .section-9-content-sponsor {}
+    
+        .section-9-content-sponsor img {
+            max-width: 64px;
+        }
+    
+        .section-9-content-method {
+            margin-top: 40px;
+        }
+    
+        .section-9-content-method img {
+            max-width: 64px;
+        }
+    
+        /*#endregion section-9*/
+    
+        /*#region section-10*/
+    
+        .section-10 {
+            margin-top: 10%;
+            padding-bottom: 15px;
+        }
+    
+        .section-10-content {
+            font-size: 15px;
+            color: #fff;
+        }
+    
+        .section-10-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #E95218;
+            font-size: 20px;
+        }
+    
+        .section-10-social-content {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .section-10-mail{
+            margin: 10px 0;
+        }
+    
+        /*#endregion section-10*/
+}
+
+
