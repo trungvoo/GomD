@@ -189,9 +189,9 @@ section {
 
 
 .section-3{
-    margin-top: 0;
+    margin-top: 5%;
     padding-bottom: 0;
-    height: 100vh;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,6 +235,57 @@ section {
     height: 534px;
     top: calc(50% - 270px);
     left: calc(50% + 170px - 131px);
+}
+
+.section-3-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.button-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-download a{
+    display: block
+}
+
+.button-download img {
+    width: 270px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.button-download img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.button-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button-social a{
+    display: block;
+    margin: 0 30px;
+}
+
+.button-social img {
+    width: 90px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.button-social img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /*#endregion section-3*/
@@ -848,9 +899,9 @@ section {
     
     
         .section-3 {
-            margin-top: 0;
-            padding-bottom: 0;
-            height: 70vh;
+            margin-top: 60px;
+            padding-bottom: 50px;
+            height: 300px;
         }
     
         .section-3-wrap-img-1 {
@@ -872,6 +923,29 @@ section {
             height: 233px;
             top: calc(50% - 116px);
             left: calc(50% + 71px - 34px);
+        }
+
+        .section-3-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .button-download img {
+            width: 150px;
+        }
+
+        .button-social{
+            margin-top: 20px;
+        }
+
+        .button-social a {
+            margin: 0 10px;
+        }
+
+        .button-social img {
+            width: 50px;
         }
     
         /*#endregion section-3*/
