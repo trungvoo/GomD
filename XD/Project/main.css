@@ -2113,6 +2113,10 @@ section {
         .section-news-wrap-content .swiper-slide {
             height: auto;
         }
+
+        .section-news-wrap-content .swiper-slide--items {
+            font-size: 10px;
+        }
     
         .section-news-wrap-content .swiper-slide--items .swiper-slide--items-title {
             font-size: 12px;
