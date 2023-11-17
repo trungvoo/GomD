@@ -139,7 +139,7 @@ section {
     font-family: font-AkiraExpanded;
     margin: auto;
     margin-top: 2%;
-    max-width: 1072px;
+    max-width: 1292px;
     text-align: center;
     font-size: 50px;
     letter-spacing: 0px;
@@ -822,8 +822,16 @@ section {
 
 /* #region section-video-1 */
 
+.section-video-1-title{
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
 .section-video-1-media{
-    
+    margin-top: 40px;
 }
 
 .section-video-1-media iframe{
@@ -1645,8 +1653,13 @@ section {
 
         /* #region section-video-1 */
     
+        .section-video-1-title{
+            font-size: 15px;
+        }
+
         .section-video-1-media{
             margin: 0 10px;
+            margin-top: 30px;
         }
 
         .section-video-1-media-wrap {
