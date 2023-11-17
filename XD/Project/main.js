@@ -31,7 +31,7 @@ new Swiper('.swiper-media-1', {
     autoplay: {
         delay: 3000,
     },
-     breakpoints: {
+    breakpoints: {
         0: {
             slidesPerView: 2.2
         },
@@ -77,3 +77,15 @@ $(".swiper-slide--items").on('click', function(){
         }
     }
 });
+
+function clickRoadMap(element){
+    var parent = $(element).parents(".timeline-tab-items");
+    var idTab = $(element).parents(".timeline-tab-items").data("id-tab");
+    if($(".timeline-tab-items--active").data("id-tab") != idTab){
+        $(".timeline-tab-items").removeClass("timeline-tab-items--active");
+        parent.addClass("timeline-tab-items--active");
+
+        $(".section-roadmap-wrap-decs-items").removeClass("section-roadmap-wrap-decs-items--active");
+        $(".section-roadmap-wrap-decs-items[data-id-tab=" + idTab + "]").addClass("section-roadmap-wrap-decs-items--active")
+    }
+}
