@@ -2013,16 +2013,13 @@ section {
         .section-9-content-sponsor {}
     
         .section-9-content-sponsor img {
-            max-width: 64px;
+            max-width: 80px;
         }
     
         .section-9-content-method {
             margin-top: 40px;
         }
     
-        .section-9-content-method img {
-            max-width: 64px;
-        }
     
         /*#endregion section-9*/
     
