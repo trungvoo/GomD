@@ -918,9 +918,19 @@ section {
     font-size: 20px;
 }
 
+.section-10-social-content-items{
+    line-height: 1.8;
+}
+
+.section-10-social-content-items span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .section-10-social-content {
     justify-content: center;
     gap: 30px;
+    align-items: end;
 }
 
 
@@ -1366,6 +1376,75 @@ section {
 
 /* #endregion section-news */
 
+/* #region section-audit by certick */
+
+.section-audit-certick-title {
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.section-audit-certick-content{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-audit-certick-content-title{
+    position: relative;
+}
+
+.section-audit-certick-content-wrap {
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.section-audit-certick-content-wrap-circle-down,
+.section-audit-certick-content-wrap-circle-left,
+.section-audit-certick-content-wrap-circle-right{
+    position: absolute;
+}
+
+.section-audit-certick-content-wrap-circle-down{
+    left: calc(50% - 13px);
+    top: -15px;
+    width: 26px;
+    z-index: 9999;
+}
+
+.section-audit-certick-content-wrap-circle-left{
+    left: calc(-72px + 60px);
+    top: calc(50% - 14px);
+    animation-delay: 100ms;
+}
+
+.section-audit-certick-content-wrap-circle-right{
+    right: calc(-72px + 60px);
+    top: calc(50% - 14px);
+    animation-delay: 100ms;
+}
+
+
+.section-audit-certick-content-circle-0,
+.section-audit-certick-content-circle-1{
+    position: absolute;
+    width: 160px;
+    top: calc(50% - 80px);
+}
+
+.section-audit-certick-content-circle-0{
+    left: calc(-160px - 30px);
+}
+
+.section-audit-certick-content-circle-1 {
+    right: calc(-160px - 30px);
+}
+
+/* #endregion section-audit by certick */
 
 @media only screen and (max-width: 991px) {
 
@@ -2133,6 +2212,53 @@ section {
             margin-top: 10px;
         }
         /* #endregion section-news */
+
+        /* #region section-audit by certick */
+
+            .section-audit-certick-title {
+                font-size: 20px;
+            }
+
+            .section-audit-certick-content-wrap{
+                margin-top: 25px;
+            }
+
+            .section-audit-certick-content-title img {
+                width: 170px;
+            }
+
+            .section-audit-certick-content-wrap-img {
+                width: 170px;
+            }
+
+            .section-audit-certick-content-wrap-circle-left,
+            .section-audit-certick-content-wrap-circle-right{
+                width: 40px;
+                top: calc(50% - 7.5px);
+            }
+
+            .section-audit-certick-content-wrap-circle-down{
+                height: 40px;
+                width: 15px;
+                left: calc(50% - 7.5px);
+            }
+
+            .section-audit-certick-content-circle-0,
+            .section-audit-certick-content-circle-1 {
+                width: 90px;
+                top: calc(50% - 45px);
+            }
+
+            .section-audit-certick-content-circle-0{
+                left: calc(-90px - 20px);
+            }
+
+            .section-audit-certick-content-circle-1 {
+                right: calc(-90px - 20px);
+            }
+
+
+        /* #endregion section-audit by certick */
 
     }
 
