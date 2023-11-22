@@ -875,12 +875,16 @@ section {
     margin-top: 5%;
 }
 
-.section-9-content-sponsor{
+.section-9-partners{
+    margin-top: 10%;
+}
 
+.section-9-content-sponsor{
+    overflow: hidden;
 }
 
 .section-9-content-sponsor img{
-    max-width: 200px;
+    max-width: 260px;
 }
 
 .section-9-content-method{
@@ -2023,7 +2027,7 @@ section {
         .section-9-content-sponsor {}
     
         .section-9-content-sponsor img {
-            max-width: 80px;
+            max-width: 110px;
         }
     
         .section-9-content-method {
