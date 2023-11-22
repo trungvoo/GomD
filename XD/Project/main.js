@@ -28,12 +28,9 @@ new Swiper('.swiper-media-1', {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
     },
-    autoplay: {
-        delay: 3000,
-    },
     breakpoints: {
         0: {
-            slidesPerView: 2.2
+            slidesPerView: 1.15
         },
         768: {
             slidesPerView: 4
@@ -88,18 +85,6 @@ $(window).on('load', function () {
     console.log("true")
 });
 
-
-$(".swiper-slide--items").on('click', function(){
-    var boolHasMedia = $(this).data("media-has");
-    if(boolHasMedia == true){
-        var srcMedia = $(this).data("media-src");
-        if($("#embed-main-media").attr("src") != srcMedia){
-            var widthMedia = $(this).data("media-width");
-            var heightMedia = $(this).data("media-height");
-            $("#embed-main-media").attr("src", srcMedia);
-        }
-    }
-});
 
 function clickRoadMap(element){
     var parent = $(element).parents(".timeline-tab-items");
