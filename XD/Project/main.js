@@ -33,7 +33,7 @@ new Swiper('.swiper-media-1', {
             slidesPerView: 1.15
         },
         768: {
-            slidesPerView: 4
+            slidesPerView: 3
         }
     }
 });
