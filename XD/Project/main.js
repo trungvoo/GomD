@@ -25,8 +25,8 @@ new Swiper('.swiper-media-1', {
     //     disableOnInteraction: false,
     // },
     navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
+        nextEl: '.swiper-media-1 .swiper-btn-next',
+        prevEl: '.swiper-media-1 .swiper-btn-prev',
     },
     breakpoints: {
         0: {
@@ -45,19 +45,38 @@ new Swiper('.swiper-news', {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
     navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
+        nextEl: '.swiper-news-btn-next',
+        prevEl: '.swiper-news-btn-prev',
     },
+    loop: true,
     autoplay: {
         delay: 3000,
     },
     breakpoints: {
         0: {
-            slidesPerView: 2.2
+            slidesPerView: 2,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 148,
+                modifier: 4,
+                slideShadows: true
+            }
+
         },
         768: {
-            slidesPerView: 4
+            slidesPerView: 3,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 4,
+                slideShadows: true
+            },
         }
     }
 });
