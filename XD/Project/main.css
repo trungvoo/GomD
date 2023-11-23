@@ -863,8 +863,8 @@ section {
     position: relative;
 }
 
-.section-video-1-content-wrap .swiper-btn-prev,
-.section-video-1-content-wrap .swiper-btn-next {
+.section-video-1-content-wrap .swiper-video-btn-prev,
+.section-video-1-content-wrap .swiper-video-btn-next {
     position: absolute;
     top: calc(50% - 20px);
     font-size: 30px;
@@ -872,8 +872,8 @@ section {
     z-index: 9999;
 }
 
-.section-video-1-content-wrap .swiper-btn-prev i,
-.section-video-1-content-wrap .swiper-btn-next i{
+.section-video-1-content-wrap .swiper-video-btn-prev i,
+.section-video-1-content-wrap .swiper-video-btn-next i{
     padding: 5px;
     background-color: #fff;
     border-radius: 50%;
@@ -884,11 +884,11 @@ section {
     color: #e8ae98;
 }
 
-.section-video-1-content-wrap .swiper-btn-prev{
+.section-video-1-content-wrap .swiper-video-btn-prev{
     left: -45px;
 }
 
-.section-video-1-content-wrap .swiper-btn-next{
+.section-video-1-content-wrap .swiper-video-btn-next{
     right: -45px;
 }
 
@@ -2011,17 +2011,17 @@ section {
             width: 100%;
         }
 
-        .section-video-1-content-wrap .swiper-btn-prev,
-        .section-video-1-content-wrap .swiper-btn-next {
+        .section-video-1-content-wrap .swiper-video-btn-prev,
+        .section-video-1-content-wrap .swiper-video-btn-next {
             top: calc(100% + 5px);
             font-size: 30px;
         }
 
-        .section-video-1-content-wrap .swiper-btn-prev {
+        .section-video-1-content-wrap .swiper-video-btn-prev {
             left: calc(50% - 50px);
         }
         
-        .section-video-1-content-wrap .swiper-btn-next {
+        .section-video-1-content-wrap .swiper-video-btn-next {
             right: calc(50% - 50px);
         }
     

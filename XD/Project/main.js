@@ -25,8 +25,8 @@ new Swiper('.swiper-media-1', {
     //     disableOnInteraction: false,
     // },
     navigation: {
-        nextEl: '.swiper-media-1 .swiper-btn-next',
-        prevEl: '.swiper-media-1 .swiper-btn-prev',
+        nextEl: '.swiper-video-btn-next',
+        prevEl: '.swiper-video-btn-prev',
     },
     breakpoints: {
         0: {
