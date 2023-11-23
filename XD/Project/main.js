@@ -32,7 +32,16 @@ new Swiper('.swiper-media-1', {
         0: {
             slidesPerView: 1.15
         },
-        768: {
+        591: {
+            slidesPerView: 1.15
+        }, 
+        751: {
+            slidesPerView: 2.15
+        }, 
+        991: {
+            slidesPerView: 3
+        },
+        1100: {
             slidesPerView: 3
         }
     }
