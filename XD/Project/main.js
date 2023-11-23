@@ -20,10 +20,10 @@ new Swiper('.swiper-member', {
 
 new Swiper('.swiper-media-1', {
     spaceBetween: 0,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.swiper-video-btn-next',
         prevEl: '.swiper-video-btn-prev',
