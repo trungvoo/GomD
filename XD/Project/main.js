@@ -81,6 +81,20 @@ new Swiper('.swiper-news', {
     }
 });
 
+new Swiper('.swiper-marquee-bottom', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 5000,
+    autoplay: {
+        delay: 1,
+    },
+    loop: true,
+    loopedSlides: 3,
+    slidesPerView:'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true
+});
+
 
 const animatedEls = document.querySelectorAll("[data-animation]");
 
