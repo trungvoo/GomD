@@ -1,9 +1,9 @@
 new Swiper('.swiper-user-case', {
     spaceBetween: 0,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.section-video-1-content-wrap .swiper-btn-next',
         prevEl: '.section-video-1-content-wrap .swiper-btn-prev',
@@ -23,6 +23,33 @@ new Swiper('.swiper-user-case', {
         }
     }
 });
+
+new Swiper('.swiper-token', {
+    spaceBetween: 0,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.section-video-1-content-wrap .swiper-btn-next',
+        prevEl: '.section-video-1-content-wrap .swiper-btn-prev',
+    },
+     breakpoints: {
+        0: {
+            slidesPerView: 2.15
+        },
+        668: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 3
+        },
+        1200: {
+            slidesPerView: 4
+        }
+    }
+});
+
 
 new Swiper('.swiper-media-1', {
     spaceBetween: 0,
