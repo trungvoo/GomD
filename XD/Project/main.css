@@ -19,6 +19,11 @@
     src: url(fonts/LeferiBaseBold.ttf);
 }
 
+@font-face {
+    font-family: font-AvertaStdBlack;
+    src: url(fonts/AvertaStd-Black.ttf);
+}
+
 @media (prefers-reduced-motion) {
     [data-animation] {
         animation: none;
@@ -31,6 +36,13 @@
     --animate-duration: 1.5s;
     --animate-delay: 1s;
     --animate-repeat: 1;
+    --font-size-title: 45px;
+    --font-size-mobile-title: 25px;
+    --font-weight-title: 500;
+    --font-size-desc: 20px;
+    --font-size-mobile-desc: 13px;
+    --line-height-title: 1.2;
+    --font-family-title: font-AvertaStdBlack;
 }
 
 [data-animation] {
@@ -69,29 +81,6 @@ section {
     overflow: hidden;
 }
 
-.wrap-main-section:first-child{
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-/*#region section-1*/
-
-.section-1{
-    user-select: none;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-1 img{
-    max-width: 449px;
-    max-height: 555px;
-}
-
-/*#endregion section-1*/
-
 /*#region section-2*/
 
 
@@ -112,7 +101,6 @@ section {
     position: relative;
     width: 1197px;
     height: 920px;
-    padding-top: 5%;
 }
 
 .section-2-wrap::before {
@@ -131,18 +119,17 @@ section {
 
 
 .section-2-title{
-    font-family: font-AkiraExpanded;
+    font-family: var(--font-family-title);
     margin: auto;
     margin-top: 2%;
     max-width: 1292px;
     text-align: center;
-    font-size: 50px;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
     color: #000000;
-    font-weight: 800;
     opacity: 1;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .section-2-description{
@@ -397,8 +384,22 @@ section {
 }
 
 .section-4-content{
-    padding: 0 30px;
     margin-top: 50px;
+    display: flex;
+}
+
+.section-4-items{
+    display: block;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.section-4-items:first-child {
+    margin-left: -10px;
+}
+
+.section-4-items:last-child {
+    margin-right: -10px;
 }
 
 .section-4-items:nth-child(1){
@@ -417,39 +418,54 @@ section {
     animation-delay: 1300ms;
 }
 
+.section-4-items:nth-child(5) {
+    animation-delay: 1700ms;
+}
+
 .section-4-items:nth-child(1) img{
-    width: 265px;
-    height: 300px;
+    width: 235px;
+    height: 260px;
 }
 
 .section-4-items:nth-child(2) img {
-    width: 252px;
-    height: 300px;
+    width: 220px;
+    height: 260px;
 }
 
 .section-4-items:nth-child(3) img {
-    width: 219px;
-    height: 301px;
+    width: 200px;
+    height: 260px;
 }
 
 .section-4-items:nth-child(4) img {
-    width: 225px;
-    height: 301px;
+    width: 200px;
+    height: 260px;
+}
+
+.section-4-items:nth-child(5) img {
+    width: 200px;
+    height: 260px;
 }
 
 .section-4-title {
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
     letter-spacing: 0px;
-    text-transform: uppercase;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-4-decscription{
+    font-size: 20px;
+    margin: auto;
 }
 
 .section-4-items-desc {
     margin: auto;
-    width: 265px;
+    width: 230px;
     height: 95px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0px;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 10px #00000029;
@@ -463,136 +479,6 @@ section {
 
 /*#endregion section-4*/
 
-/*#region section-5*/
-
-.section-5{
-    margin-top: 10%;
-}
-
-.section-5-nft-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
-    letter-spacing: 0px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-
-.section-5-nft-desc {
-    margin: auto;
-    width: 765px;
-    font-size: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-.section-5-nft-section1{
-    margin: auto;
-    margin-top: 5%;
-    width: 600px;
-    height: 600px;
-    position: relative;
-}
-
-.section-5-nft-section1::before{
-    content: '';
-    top: 83px;
-    left: -60px;
-    position: absolute;
-    width: 120%;
-    height: 70%;
-    transform: matrix(-0.75, 0.66, -0.66, -0.75, 0, 0);
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 10px #00000029;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.section-5-nft-section2{
-    margin-top: 15%;
-}
-
-.section-5-nft-section2 img{
-    width: 256px;
-    height: 311px;
-}
-
-.section-5-nft-section2-title{
-    font-family: font-AkiraExpanded;
-    margin-top: 3%;
-    font-size: 30px;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.section-5-nft-section2-desc {
-    font-size: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-
-
-
-
-.section-5-nft-section3 {
-    margin-top: 15%;
-}
-
-.section-5-nft-section3 img {
-    width: 305px;
-    height: 311px;
-}
-
-.section-5-nft-section3-title {
-    font-family: font-AkiraExpanded;
-    margin-top: 3%;
-    font-size: 30px;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.section-5-nft-section3-desc {
-    font-size: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-
-
-
-.section-5-nft-section4 {
-    margin-top: 15%;
-}
-
-.section-5-nft-section4 img {
-    width: 352px;
-    height: 302px;
-}
-
-.section-5-nft-section4-title {
-    font-family: font-AkiraExpanded;
-    margin-top: 3%;
-    font-size: 30px;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.section-5-nft-section4-desc {
-    font-size: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-/*#endregion section-5*/
-
 /*#region section-6*/
 
 .section-6{
@@ -600,12 +486,11 @@ section {
 }
 
 .section-6-usage-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .section-6-usage-desc {
@@ -667,7 +552,7 @@ section {
     margin: auto;
     width: 284px;
     height: 97px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0px;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 10px #00000029;
@@ -689,11 +574,11 @@ section {
 }
 
 .section-7-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
-    line-height: 1.2;
 }
 
 .section-7-desc{
@@ -806,8 +691,10 @@ section {
 }
 
 .section-9-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
 }
 
 .section-9-content{
@@ -839,11 +726,11 @@ section {
 /* #region section-video-1 */
 
 .section-video-1-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
     letter-spacing: 0px;
-    line-height: 1.2;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
 }
 
 .section-video-1-media{
@@ -911,13 +798,12 @@ section {
 /* #region roadmap */
 
 .section-roadmap-wrap-title{
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
     text-align: center;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .section-roadmap-wrap-timeline-scroll{
@@ -1149,18 +1035,17 @@ section {
 
 
 .section-what-title {
-    font-family: font-AkiraExpanded;
+    font-family: var(--font-family-title);
     margin: auto;
     margin-top: 2%;
     max-width: 1292px;
     text-align: center;
-    font-size: 50px;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
     color: #000000;
-    font-weight: 800;
     opacity: 1;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .section-what-description {
@@ -1204,21 +1089,18 @@ section {
 }
 
 .section-news-wrap-title{
-    font-family: font-AkiraExpanded;
+    font-family: var(--font-family-title);
     margin: auto;
     margin-top: 2%;
     max-width: 1292px;
     text-align: center;
-    font-size: 50px;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
     color: #000000;
-    font-weight: 800;
     opacity: 1;
-    text-transform: uppercase;
-    line-height: 1.2;   
 }
-
-
 
 .section-news-wrap-content{
     margin-top: 5%;
@@ -1321,13 +1203,12 @@ section {
 /* #region section-audit by certik */
 
 .section-audit-certik-title {
-    font-family: font-AkiraExpanded;
-    font-size: 50px;
-    font-weight: 800;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     letter-spacing: 0px;
     text-align: center;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .section-audit-certik-content{
@@ -1407,9 +1288,16 @@ section {
     font-weight: bold;
 }
 
+.section-info-wrap-desc{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
 .section-copyright-title{
     text-align: center;
     color: #fff;
+    font-size: 13px;
 }
 
 .section-info-wrap-item ul{
@@ -1494,24 +1382,6 @@ section {
         padding-bottom: 20%;
     }
 
-    /*#region section-1*/
-    
-        .section-1{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0;
-            padding-bottom: 0;
-        }
-
-        .section-1 img {
-            max-width: 187px;
-            max-height: 231px;
-        }
-    
-        /*#endregion section-1*/
-    
         /*#region section-2*/
 
         .section-2 {
@@ -1546,12 +1416,12 @@ section {
     
         .section-2-title {
             margin-top: 5%;
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-2-description {
             max-width: 332px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
     
         .section-2-btn {
@@ -1670,8 +1540,6 @@ section {
     
         /*#region section-4*/
     
-    
-    
         .section-4 {
             margin-top: 0;
             padding-bottom: 0;
@@ -1679,15 +1547,21 @@ section {
 
         .section-4-content{
             margin-top: 10%;
+            flex-wrap: wrap;
         }
     
 
         .section-4-title {
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
+        }
+
+        .section-4-decscription {
+            font-size: var(--font-size-mobile-desc);
         }
 
         .section-4-items{
             margin-top: 10%;
+            width: 100%;
         }
     
         .section-4-items-desc {
@@ -1695,7 +1569,7 @@ section {
             margin-top: 15px;
             width: 170px;
             height: 60px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
 
         .section-4-items:nth-child(1) img {
@@ -1718,130 +1592,28 @@ section {
             height: 136px;
         }
 
+        .section-4-items:nth-child(5) img {
+            width: 110px;
+            height: 136px;
+        }
+
         .section-4-items {
             animation-delay: 100ms !important;
         }
     
         /*#endregion section-4*/
     
-        /*#region section-5*/
-    
-        .section-5-nft-title {
-            font-size: 15px;
-        }
-    
-    
-        .section-5-nft-desc {
-            width: 232px;
-            font-size: 10px;
-        }
-    
-        .section-5-nft-section1 {
-            margin: auto;
-            margin-top: 10%;
-            width: 286px;
-            height: 286px;
-            position: relative;
-        }
-
-        .section-5-nft-section1 img{
-            width: 286px;
-            height: 286px;
-        }
-    
-        .section-5-nft-section1::before {
-            top: 55px;
-            left: -30px;
-            position: absolute;
-        }
-    
-        .section-5-nft-section2 {
-            margin-top: 20%;
-        }
-    
-        .section-5-nft-section2 img {
-            width: 123px;
-            height: 150px;
-        }
-    
-        .section-5-nft-section2-title {
-            font-family: font-AkiraExpanded;
-            margin: auto;
-            margin-top: 3%;
-            font-size: 15px;
-            max-width: 220px;
-            
-        }
-    
-        .section-5-nft-section2-desc {
-            margin: auto;
-            font-size: 10px;
-            max-width: 270px;
-        }
-    
-    
-    
-    
-    
-        .section-5-nft-section3 {
-            margin-top: 15%;
-        }
-    
-        .section-5-nft-section3 img {
-            width: 137px;
-            height: 140px;
-        }
-    
-        .section-5-nft-section3-title {
-            margin: auto;
-            margin-top: 3%;
-            font-size: 15px;
-            width: 330px;
-        }
-    
-        .section-5-nft-section3-desc {
-            font-size: 10px;
-            width: 300px;
-            margin: auto;
-        }
-    
-    
-    
-    
-        .section-5-nft-section4 {
-            margin-top: 15%;
-        }
-    
-        .section-5-nft-section4 img {
-            width: 163px;
-            height: 140px;
-        }
-    
-        .section-5-nft-section4-title {
-            margin-top: 3%;
-            font-size: 15px;
-        }
-    
-        .section-5-nft-section4-desc {
-            font-size: 10px;
-            width: 225px;
-            margin: auto;
-        }
-    
-        /*#endregion section-5*/
-    
         /*#region section-6*/
     
     
     
         .section-6-usage-title {
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-6-usage-desc {
-            font-size: 10px;
-            width: 239px;
-            margin: auto;
+            font-size: var(--font-size-mobile-desc);
+            width: auto;
             margin-bottom: 5%;
         }
 
@@ -1878,7 +1650,7 @@ section {
             margin: auto; 
             width: 155px;
             height: 55px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
     
             margin-top: 20px;
         }
@@ -1892,11 +1664,11 @@ section {
         }
     
         .section-7-title {
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-7-desc {
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
     
         .section-7-content {
@@ -1904,7 +1676,7 @@ section {
         }
     
         .section-7-content-title {
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-7-content-wrap {
@@ -1923,7 +1695,7 @@ section {
         .section-7-content-item-child {
             width: 256px;
             height: 54px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
 
     
@@ -1934,7 +1706,7 @@ section {
     
         .section-7-content-desc {
             margin-top: 20px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
     
         .section-7-content-bottom-title {
@@ -1947,7 +1719,7 @@ section {
         .section-7-content-bottom-desc {
             margin: auto;
             width: 288px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
     
     
@@ -1961,7 +1733,7 @@ section {
         }
     
         .section-9-title {
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-9-content {
@@ -1986,7 +1758,7 @@ section {
         }
 
         .section-video-1-title{
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
 
         .section-video-1-media{
@@ -2026,7 +1798,7 @@ section {
         /* #region roadmap */
 
             .section-roadmap-wrap-title {
-                font-size: 20px;
+                font-size: var(--font-size-mobile-title);
             }
 
             .section-roadmap-wrap-timeline {
@@ -2037,7 +1809,7 @@ section {
             }
 
             .section-roadmap-wrap-decs-items-content{
-                font-size: 12px;
+                font-size: var(--font-size-mobile-desc);
             }
 
         /* #endregion roadmap */
@@ -2076,13 +1848,13 @@ section {
     
         .section-what-title {
             margin-top: 5%;
-            font-size: 15px;
+            font-size: var(--font-size-mobile-title);
         }
 
     
         .section-what-description {
             max-width: 332px;
-            font-size: 10px;
+            font-size: var(--font-size-mobile-desc);
         }
     
         .section-what-btn {
@@ -2099,7 +1871,7 @@ section {
         }
     
         .section-news-wrap-title {
-            font-size: 20px;
+            font-size: var(--font-size-mobile-title);
         }
     
         .section-news-wrap-content{
@@ -2183,7 +1955,7 @@ section {
         /* #region section-audit by certik */
 
             .section-audit-certik-title {
-                font-size: 20px;
+                font-size: var(--font-size-mobile-title);
             }
 
             .section-audit-certik-content-wrap{
