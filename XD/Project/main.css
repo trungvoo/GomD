@@ -385,21 +385,10 @@ section {
 
 .section-4-content{
     margin-top: 50px;
-    display: flex;
 }
 
 .section-4-items{
     display: block;
-    width: 20%;
-    padding: 0 10px;
-}
-
-.section-4-items:first-child {
-    margin-left: -10px;
-}
-
-.section-4-items:last-child {
-    margin-right: -10px;
 }
 
 .section-4-items:nth-child(1){

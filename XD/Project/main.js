@@ -1,4 +1,4 @@
-new Swiper('.swiper-member', {
+new Swiper('.swiper-user-case', {
     spaceBetween: 0,
     // autoplay: {
     //     delay: 2500,
@@ -10,10 +10,16 @@ new Swiper('.swiper-member', {
     },
      breakpoints: {
         0: {
-            slidesPerView: 2
+            slidesPerView: 2.1
+        },
+        668: {
+            slidesPerView: 3
         },
         768: {
-            slidesPerView: 3
+            slidesPerView: 4
+        },
+        1200: {
+            slidesPerView: 5
         }
     }
 });
@@ -46,7 +52,6 @@ new Swiper('.swiper-media-1', {
         }
     }
 });
-
 
 new Swiper('.swiper-news', {
     spaceBetween: 0,
