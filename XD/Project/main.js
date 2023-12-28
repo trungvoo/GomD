@@ -50,6 +50,25 @@ new Swiper('.swiper-token', {
     }
 });
 
+new Swiper('.swiper-member', {
+    spaceBetween: 0,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+        nextEl: '.section-video-1-content-wrap .swiper-btn-next',
+        prevEl: '.section-video-1-content-wrap .swiper-btn-prev',
+    },
+     breakpoints: {
+        0: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
+        }
+    }
+});
 
 new Swiper('.swiper-media-1', {
     spaceBetween: 0,

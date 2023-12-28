@@ -637,6 +637,62 @@ section {
 
 /*#endregion section-7*/
 
+/*#region section-8*/
+
+.section-8 {
+    margin-top: 10%;
+}
+
+.section-8-title {
+    font-family: font-AkiraExpanded;
+    font-size: 50px;
+}
+
+.section-8-content {
+    margin-top: 3%;
+}
+
+.content-web__item {
+    margin: 0 3px;
+    position: relative;
+}
+
+.section-8-content-mobile {
+    display: none;
+}
+
+.content-web__item-info {
+    position: absolute;
+    width: 152px;
+    left: calc(50% - 76px);
+    top: 48%;
+}
+
+.content-web__item-info-name {
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.content-web__item-info-name p {
+    margin: 1px;
+    font-size: 9px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.content-web__item-info-desc {
+    margin-top: 7px;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.content-web__item img {
+    max-width: 192px;
+}
+
+/*#endregion section-8*/
+
 /*#region section-9*/
 
 .section-9{
@@ -1679,6 +1735,89 @@ section {
     
         /*#endregion section-7*/
       
+        /*#region section-8*/
+
+        .section-8{
+            margin-top: 10%;
+        }
+
+        .section-8-title {
+            font-size: 15px;
+        }
+
+        .section-8-content {
+            margin-top: 5%;
+        }
+
+        .section-8-content-web{
+            display: none;
+        }
+
+        .section-8-content-mobile{
+            display: block;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .content-mobile__item {
+            margin: 0 3px;
+            position: relative;
+        }
+
+        .content-mobile__item-info {
+            position: absolute;
+            width: 152px;
+            left: calc(50% - 76px);
+            top: 50%;
+        }
+
+        .content-mobile__item-info-name {
+            font-size: 10px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+
+        .content-mobile__item-info-name p {
+            margin: 2px;
+            font-size: 8px;
+            font-weight: 500;
+            width: 100%;
+        }
+
+        .content-mobile__item-info-desc {
+            margin-top: 5px;
+            font-size: 8px;
+            font-weight: 500;
+        }
+
+        .content-mobile__item img {
+            max-width: 160px;
+        }
+
+        .swiper-btn-prev,
+        .swiper-btn-next{
+            position: absolute;
+            top: calc(50% - 22px);
+            color: #D1D1D1;
+            font-size: 30px;
+        }
+
+        .swiper-btn-prev{
+            left: -5px;
+        }
+
+        .swiper-btn-next {
+            right: -5px;
+        }
+
+
+        .swiper-button-disabled{
+            color: #d1d1d159;
+        }
+
+
+        /*#endregion section-8*/
+
         /*#region section-9*/
 
         .section-9{
@@ -1953,6 +2092,10 @@ section {
         /* #endregion section-audit by certik */
 
         /* #region footer */
+
+        .wrap-footer{
+        padding: 30px 20px;
+        }
 
         .section-address-wrap-logo{
             justify-content: center;
