@@ -1,3 +1,29 @@
+
+$(document).ready(function() { 
+  var id = '#dialog';
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  $('#mask').css({'width':maskWidth,'height':maskHeight}); 
+  $('#mask').fadeIn(500); 
+  $('#mask').fadeTo("slow",0.9); 
+        var winH = $(window).height();
+  var winW = $(window).width();
+        $(id).css('top',  winH/2-$(id).height()/2);
+  $(id).css('left', winW/2-$(id).width()/2);
+     $(id).fadeIn(500);  
+     $('.window .close').click(function (e) {
+  e.preventDefault();
+  $('#mask').hide();
+  $('.window').hide();
+     });  
+     $('#mask').click(function () {
+  $(this).hide();
+  $('.window').hide();
+ });  
+ 
+});
+
+
 new Swiper('.swiper-user-case', {
     spaceBetween: 0,
     autoplay: {
@@ -190,3 +216,4 @@ function clickRoadMap(element){
         $(".section-roadmap-wrap-decs-items[data-id-tab=" + idTab + "]").addClass("section-roadmap-wrap-decs-items--active")
     }
 }
+
