@@ -78,13 +78,13 @@ new Swiper('.swiper-token', {
 
 new Swiper('.swiper-member', {
     spaceBetween: 0,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
-        nextEl: '.section-video-1-content-wrap .swiper-btn-next',
-        prevEl: '.section-video-1-content-wrap .swiper-btn-prev',
+        nextEl: '.swiper-member-btn-next',
+        prevEl: '.swiper-member-btn-prev',
     },
      breakpoints: {
         0: {
@@ -121,6 +121,35 @@ new Swiper('.swiper-media-1', {
         },
         1100: {
             slidesPerView: 3
+        }
+    }
+});
+
+new Swiper('.swiper-business', {
+    spaceBetween: 0,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-video-btn-next',
+        prevEl: '.swiper-video-btn-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1.25
+        },
+        591: {
+            slidesPerView: 2.25
+        }, 
+        751: {
+            slidesPerView: 3
+        }, 
+        991: {
+            slidesPerView: 4
+        },
+        1100: {
+            slidesPerView: 5
         }
     }
 });
