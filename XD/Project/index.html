@@ -17,6 +17,22 @@
             <div class="wrap-header-main-logo">
                 <img src="Content/PNG/logo_header.png" alt="">
             </div>
+            <div class="wrap-header-main-lang">
+                <div class="main-lang-dropdown">
+                    <input type="text" class="main-lang-text" placeholder="ENG" readonly>
+                    <div class="main-lang-option">
+                        <div data-lang="english" language="ENG" class="main-lang-option-item">
+                            ENG
+                        </div>
+                        <div data-lang="korean" language="KOR" class="main-lang-option-item">
+                            KOR
+                        </div>
+                        <div data-lang="vietnamese" language="VIE" class="main-lang-option-item">
+                            VIE
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- <section class="wrap-main-popup">
@@ -45,11 +61,11 @@
                     From <span>Web2 to Web3: GOMDORI's Journey</span> Towards Decentralized Commerce
                 </div>
                 <div class="section-2-wrapbtn">
-                    <a data-animation="animateFadeUp" href="Content/WhitePaper/GOMD_Whiteparer.html" target="_blank"
+                    <a data-animation="animateFadeUp" id="section-2-wrapbtn-btn1" href="Content/WhitePaper/GOMD_Whiteparer.html" target="_blank"
                         class="btn section-2-btn mx-1">
                         WHITE PAPER
                     </a>
-                    <a data-animation="animateFadeUp" href="Content/WhitePaper/GOMD_Legal.html" target="_blank"
+                    <a data-animation="animateFadeUp" id="section-2-wrapbtn-btn2" href="Content/WhitePaper/GOMD_Legal.html" target="_blank"
                         class="btn section-2-btn mx-1">
                         Legal Opinion
                     </a>
@@ -65,7 +81,8 @@
                             <img class="img-fluid" src="Content/PNG/visit.jpg" alt="">
                         </div>
                         <div class="gate-wrap-item-button">
-                            <a href="https://www.gate.io/startup/1248" target="_blank">Visit</a>
+                            <a href="https://www.gate.io/startup/1248" id="gate-button1" 
+                            target="_blank">Visit</a>
                         </div>
                     </div>  
                     <div class="gate-wrap-item">
@@ -73,7 +90,8 @@
                             <img class="img-fluid" src="Content/PNG/trading.jpg" alt="">
                         </div>
                         <div class="gate-wrap-item-button">
-                            <a href="https://www.gate.io/trade/GOMD_USDT"target="_blank">Trading Now</a>
+                            <a href="https://www.gate.io/trade/GOMD_USDT" id="gate-button2"
+                            target="_blank">Trading Now</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +108,7 @@
                                     <div class="setion-business-item-logo">
                                         <img src="Content/Mainpage/Main_icon_01.png" alt="">
                                     </div>
-                                    <div class="setion-business-item-title">
+                                    <div id="business-title-1" class="setion-business-item-title">
                                         Gomi Corporation Inc
                                     </div>
                                     <div class="setion-business-item-desc">
@@ -174,10 +192,7 @@
                 </div>
                 <div data-animation="animatefadeInRight" class="section-3-wrap-button-right">
                     <div class="section-3-wrap-button-right-content">
-                        5,000+
-                        <span>Brands</span>
-                        140,000+
-                        <span>SKUS</span>
+                        5,000+<span>Brands</span>140,000+<span>SKUS</span>
                     </div>
                 </div>
             </div>
@@ -348,7 +363,7 @@
         <section class="wrap-main-section section-4 text-center">
             <div class="container section-4-cases">
                 <div data-animation="animateFadeUp" class="section-4-title">
-                    <span>Use cases</span> of Web3 in <t class="d-inline-block">e-commerce</t>
+                    <span>Use cases</span> of Web3 in <t class='d-inline-block'>e-commerce</t>
                 </div>
                 <div data-animation="animateFadeUp" class="section-4-decscription">
                     Web3 is the next iteration of the internet, and it has the potential to revolutionize e-commerce in several ways.
@@ -451,7 +466,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation01_Bitcoin network 1.png" alt="">
-                                    Ecosystem
+                                    <span>Ecosystem</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     40%
@@ -460,7 +475,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation02_Strategic Plan 1.png" alt="">
-                                    Strategic Investors
+                                    <span>Strategic Investors</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     15%
@@ -469,7 +484,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation03_Software development 1.png" alt="">
-                                    Development
+                                    <span>Development</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     10%
@@ -478,7 +493,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation04_marketing ideas 1.png" alt="">
-                                    Marketing
+                                    <span>Marketing</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     10%
@@ -491,7 +506,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation05_Team 1.png" alt="">
-                                    Team
+                                    <span>Team</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     10%
@@ -500,7 +515,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation06_Flow Chart 1.png" alt="">
-                                    Liquidity
+                                    <span>Liquidity</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     5%
@@ -509,7 +524,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation07_Gold Investment 1.png" alt="">
-                                    Reserve
+                                    <span>Reserve</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     4%
@@ -518,7 +533,7 @@
                             <div class="row section-7-content-item-child align-items-center">
                                 <div class="col-9 section-7-content-item-title">
                                     <img src="Content/Allocation/Allocation08_Help 1.png" alt="">
-                                    Advisors
+                                    <span>Advisors</span>
                                 </div>
                                 <div class="col-3 section-7-content-item-ratio">
                                     1%
@@ -540,8 +555,7 @@
                             <img src="Content/Members/09_1.png" alt="">
                             <div class="content-web__item-info">
                                 <div class="content-web__item-info-name">
-                                    David Jang
-                                    <p>Chairman</p>
+                                    David Jang<p>Chairman</p>
                                 </div>
                                 <div class="content-web__item-info-desc">
                                     · Gomi Corp Founder & CEO
@@ -560,8 +574,7 @@
                             <img src="Content/Members/09_2.png" alt="">
                             <div class="content-web__item-info">
                                 <div class="content-web__item-info-name">
-                                    Steve Lee
-                                    <p>Co-Founder & CEO</p>
+                                    Steve Lee<p>Co-Founder & CEO</p>
                                 </div>
                                 <div class="content-web__item-info-desc">
                                     · Gomi Corp Founder & CEO
@@ -578,8 +591,7 @@
                             <img src="Content/Members/09_3.png" alt="">
                             <div class="content-web__item-info">
                                 <div class="content-web__item-info-name">
-                                    Jason Kim
-                                    <p>COO</p>
+                                    Jason Kim<p>COO</p>
                                 </div>
                                 <div class="content-web__item-info-desc">
                                     · Gomi Corp C-Level(COO)
@@ -620,8 +632,7 @@
                             <img src="Content/Members/09_4.png" alt="">
                             <div class="content-web__item-info">
                                 <div class="content-web__item-info-name">
-                                    Vinay Chandra Lal
-                                    <p>Advisor</p>
+                                    Vinay Chandra Lal<p>Advisor</p>
                                 </div>
                                 <div class="content-web__item-info-desc">
                                     · Founder and CEO - The Crypto Launchpad
@@ -1154,36 +1165,7 @@
                         <img src="Content/Roadmap/Arrow.png" alt="">
                     </div>
                     <div class="section-roadmap-wrap-decs-content">
-                        <div data-animation="animateFadeUp" data-id-tab="2023-s" class="section-roadmap-wrap-decs-items section-roadmap-wrap-decs-items--active">
-                            <div class="section-roadmap-wrap-decs-items-content">
-                                <p>
-                                    <b><span>&#8226;</span> Conduct Market Research:</b>
-                                    Analyze the current e-commerce landscape, identify Web3 trends, and assess the competitive landscape.
-                                </p>
-                                <p>
-                                    <b>
-                                    <span>&#8226;</span> Establish Objectives:</b>
-                                    Clearly define the company's goals for entering the Web3 e-commerce space, such as increasing customer engagement,
-                                    expanding market reach, or enhancing brand reputation.
-                                </p>
-                                <p>
-                                    <span>&#8226;</span>
-                                    Raise $20 million in 4 rounds of Investment phase.
-                                </p>
-                                <p>
-                                    <span>&#8226;</span>
-                                    Expand and enhance customer services through the use of blockchain-based solutions.
-                                </p>
-                                <p>
-                                    <span>&#8226;</span>
-                                    Achieve product exports worth $1 million to China and Taiwan.
-                                </p>
-                                    <span>&#8226;</span>
-                                    Signed an export contract with a Korean pharmaceutical company.
-                                </p>
-                            </div>
-                        </div>
-                        <div data-animation="animateFadeUp" data-id-tab="2024-f" class="section-roadmap-wrap-decs-items">
+                        <div data-animation="animateFadeUp" data-id-tab="2024-f" class="section-roadmap-wrap-decs-items section-roadmap-wrap-decs-items--active">
                             <div class="section-roadmap-wrap-decs-items-content">
                                 <p>
                                     <span>&#8226;</span>
@@ -1512,9 +1494,6 @@
                                         <img class="img-fluid" src="Content/News/Marquee/m_4.png" alt="">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="img-fluid" src="Content/News/Marquee/m_5.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
                                         <img class="img-fluid" src="Content/News/Marquee/m_6.png" alt="">
                                     </div>
                                     <div class="swiper-slide">
@@ -1694,7 +1673,6 @@
                     </div>
                 </div>
             </div>
-            
         </section>
         <!-- Popup
         <section class="wrap-main-popup">
@@ -1834,6 +1812,7 @@
                     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
                     crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script src="data.js"></script>
             <script src="main.js"></script>
         </div>
     </footer>

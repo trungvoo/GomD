@@ -246,3 +246,105 @@ function clickRoadMap(element){
     }
 }
 
+$(".main-lang-dropdown").on('click', function(){
+    $(this).toggleClass('active');
+})
+
+
+
+const langs = document.querySelector(".langs"),
+    link = document.querySelectorAll(".main-lang-option-item");
+
+const lang = localStorage.getItem("lang") || "english",
+    langIndex = parseInt(localStorage.getItem("langIndex")) || 0;
+
+
+if(lang==="english"){
+    $('.main-lang-text').val(link[0].getAttribute("language"));
+    changeLanguage('english');
+} else{
+    $('.main-lang-text').val(link[langIndex].getAttribute("language"));
+    changeLanguage(lang);
+
+}
+
+link.forEach((op, i) => 
+    {
+        op.addEventListener("click", ()=>{
+            $('.main-lang-text').val(op.getAttribute("language"));
+
+            const attr = op.dataset.lang;
+
+            if( attr != 'vietnamese'){
+                changeLanguage(attr);
+                localStorage.setItem("lang", attr);
+                localStorage.setItem("langIndex", i)
+            }
+     });
+});
+
+function changeLanguage(lang){
+    // section 2
+    $(".section-2-title").html(dataLang[lang].section2.title);
+    $(".section-2-description").html(dataLang[lang].section2.description);
+    $("#section-2-wrapbtn-btn1").html(dataLang[lang].section2.buttons.btn1);
+    $("#section-2-wrapbtn-btn2").html(dataLang[lang].section2.buttons.btn2);
+    // section gate
+    $("#gate-button1").html(dataLang[lang].sectionGate.buttons.btn1);
+    $("#gate-button2").html(dataLang[lang].sectionGate.buttons.btn2);
+    // section business
+    for(i = 0; i < $(".setion-business-item-title").length; i++){
+        $(".setion-business-item-title").eq(i).html(dataLang[lang].sectionBusines.business[i].title);
+        $(".setion-business-item-desc").eq(i).html(dataLang[lang].sectionBusines.business[i].decscription);
+    }
+    // section 3
+    $(".section-3-wrap-button-left-content").html(dataLang[lang].section3.buttons.button1);
+    $(".section-3-wrap-button-right-content").html(dataLang[lang].section3.buttons.button2);
+    // section social
+    $(".button-social-partners").html(dataLang[lang].section3.title);
+    // section Marketing
+    $(".section-video-1-title").html(dataLang[lang].sectionMarketting.title);
+    // section 4
+    $(".section-4-title").html(dataLang[lang].section4.title);
+    $(".section-4-decscription").html(dataLang[lang].section4.decscription);
+    for(i = 0; i < $(".section-4-items").length; i++){
+        $(".section-4-items-desc").eq(i).html(dataLang[lang].section4.cases[i].title);
+    }
+    // section 6
+    $(".section-6-usage-title").html(dataLang[lang].section6.title);
+    $(".section-6-usage-desc").html(dataLang[lang].section6.decscription);
+    for(i = 0; i < $(".section-6-items").length; i++){
+        $(".section-6-items-desc").eq(i).html(dataLang[lang].section6.tokens[i].title);
+    }
+    // section 7
+    $(".section-7-title").html(dataLang[lang].section7.title);
+    $(".section-7-desc").html(dataLang[lang].section7.decscription);
+    $(".section-7-content-title").html(dataLang[lang].section7.content.title);
+    for(i = 0; i < $(".section-7-content-item-title").length; i++){
+        $(".section-7-content-item-title span").eq(i).html(dataLang[lang].section7.content.items[i].title);
+    }
+    // section 8
+    $(".section-8-title").html(dataLang[lang].section8.title);
+    for(i = 0; i < $(".content-web__item").length; i++){
+        $(".content-web__item-info-name").eq(i).html(dataLang[lang].section8.items[i].name);
+        $(".content-web__item-info-desc").eq(i).html(dataLang[lang].section8.items[i].descriptions);
+    }
+    // section roadmap
+    $(".section-roadmap-wrap-title").html(dataLang[lang].sectionRoadmap.title);
+    for(i = 0; i < $(".timeline-tab-items").length; i++){
+        $(".timeline-tab-title-year").eq(i).html(dataLang[lang].sectionRoadmap.content.items[i].title);
+        $(".timeline-tab-title-desc").eq(i).html(dataLang[lang].sectionRoadmap.content.items[i].decscription);
+        $(".section-roadmap-wrap-decs-items-content").eq(i).html(dataLang[lang].sectionRoadmap.content.items[i].content);
+    }
+    // section Media
+    $(".section-news-wrap-title").html(dataLang[lang].sectionMedia.title);
+    for(i = 0; i < $(".section-news-wrap-content .swiper-slide").length; i++){
+        $(".section-news-wrap-content .swiper-slide--items-desc").eq(i).html(dataLang[lang].sectionMedia.content.items[i].title);
+    }
+    // section 9
+    $(".section-9-investors .section-9-title").html(dataLang[lang].section9.title1);
+    $(".section-9-partners .section-9-title").html(dataLang[lang].section9.title2);
+
+    
+}
+
