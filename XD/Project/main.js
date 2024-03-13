@@ -328,6 +328,8 @@ function changeLanguage(lang){
     for(i = 0; i < $(".content-web__item").length; i++){
         $(".content-web__item-info-name").eq(i).html(dataLang[lang].section8.items[i].name);
         $(".content-web__item-info-desc").eq(i).html(dataLang[lang].section8.items[i].descriptions);
+        $(".content-mobile__item-info-name").eq(i).html(dataLang[lang].section8.items[i].name);
+        $(".content-mobile__item-info-desc").eq(i).html(dataLang[lang].section8.items[i].descriptions);
     }
     // section roadmap
     $(".section-roadmap-wrap-title").html(dataLang[lang].sectionRoadmap.title);
