@@ -100,7 +100,7 @@ body{
 
 .wrap-header{
     position: absolute;
-    z-index: 99999;
+    z-index: 99999999;
     width: 100%;
 }
 

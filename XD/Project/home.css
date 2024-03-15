@@ -1350,6 +1350,7 @@ section {
 .gate-wrap-content{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .gate-wrap-item{
