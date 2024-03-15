@@ -200,7 +200,7 @@
 .collection-main-items-content-info-right-price span {
     font-family: var(--font-family-Pretendard);
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 40px;
     color: #fff;
@@ -278,8 +278,177 @@
 
 @media only screen and (max-width: 991px) {
 
-    /* .section-dashboard-bg img {
-        scale: calc(3);
-    } */
+    /* #region main page */
+
+    .section-dashboard-bg {
+        height: 681px;
+    }
+
+    .section-dashboard-bg img{
+        height: 100%;
+        object-fit: cover; 
+        object-position: 15%;
+    }
+
+    .section-dashboard-wrap::before {
+        background-size: 90%;
+        opacity: 0.1;
+    }
+
+    .section-dashboard-img{
+        max-width: 80px;
+    }
+
+    .section-dashboard-title{
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font-family-Pretendard);
+        font-weight: 700;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* #endregion main page */
    
+
+    /* #region section list */
+
+        /* header */
+
+        .collection-header-img {
+            height: 340px;
+        }
+    
+        .collection-header-img img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        .collection-header-info-name {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    
+        .collection-header-info-year {
+            font-size: 16px;
+        }
+
+        /* main content */
+    
+        .collection-main {
+            max-width: auto;
+            margin: 70px 20px;
+        }
+    
+        .collection-main-items {
+            margin-top: 40px;
+            border-radius: 10px;
+            background: #4D4D4D;
+            overflow: hidden;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+    
+        .collection-main-items-title {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+        }
+    
+        .collection-main-items-content {
+            padding-top: 0;
+            padding: 20px;
+        }
+
+        .collection-main-items-content-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-height: 100%;
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    
+        .collection-main-items-content-info-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            padding-left: 20px;
+        }
+    
+        .collection-main-items-content-info-right-title p {
+            font-size: 20px;
+        }
+    
+        .collection-main-items-content-info-right-title span {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    
+        .collection-main-items-content-info-right-feature {
+            margin-top: 40px;
+        }
+    
+        .collection-main-items-content-info-right-feature p {
+            font-size: 14px;
+        }
+    
+        .collection-main-items-content-info-right-feature span {
+            font-size: 16px;
+        }
+    
+        .collection-main-items-content-info-right-price {
+            margin-top: 40px;
+        }
+    
+        .collection-main-items-content-info-right-price p {
+            font-size: 14px;
+        }
+    
+        .collection-main-items-content-info-right-price span {
+            font-size: 28px;
+        }
+    
+        .collection-main-items-content-desc {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .collection-main-items-content-desc img:last-child {
+            margin-top: 20px;
+        }
+
+
+        /* Certificate */
+    
+        .collection-main-certificate-title {
+            font-size: 16px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .collection-main-certificate-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+        .collection-main-certificate-img img:last-child {
+           margin-top: 20px;
+        }
+
+    /* #endgion section list */
+
 }
