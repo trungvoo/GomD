@@ -17,22 +17,45 @@
     <header class="wrap-header">
         <div class="wrap-header-main">
             <div class="wrap-header-main-logo">
-                <img src="Content/PNG/logo_header.png" alt="">
+                <a href="index.html"><img src="Content/PNG/logo_header.png" alt=""></a>
             </div>
-            <div class="wrap-header-main-lang">
-                <div class="main-lang-dropdown">
-                    <input type="text" class="main-lang-text" placeholder="ENG" readonly>
-                    <div class="main-lang-option">
-                        <div data-lang="english" language="ENG" class="main-lang-option-item">
-                            ENG
-                        </div>
-                        <div data-lang="korean" language="KOR" class="main-lang-option-item">
-                            KOR
-                        </div>
-                        <div data-lang="vietnamese" language="VIE" class="main-lang-option-item d-none">
-                            VIE
-                        </div>
-                    </div>
+            <div class="wrap-header-main-nav">
+                <div class="header-main-nav">
+                    <ul class="main-nav-category1">
+                        <li class="main-nav-category1-items">
+                            <a class="main-nav-category1-items-links" href="gallery.html" onclick="return yes_redirect_url();">Gallery</a>
+                            <ul class="main-nav-category2 d-none">
+                                <li class="main-nav-category2-items">Auction Artist</li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-1">
+                                    Giovanni Bartolena
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-2">
+                                    Jean-Augustin Franquelin
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-3">
+                                    Amede Modigliani
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-4">
+                                    Alberto Giacometti
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-category1-items">
+                            <div class="main-lang-dropdown">
+                                <img class="img-fluid main-lang-img" src="Content/Language/eng.svg" alt="">
+                                <div class="main-lang-option">
+                                    <div data-lang="english" language-src="Content/Language/eng.svg"
+                                        class="main-lang-option-item">
+                                        <img src="Content/Language/eng.svg" alt="">
+                                    </div>
+                                    <div data-lang="korean" language-src="Content/Language/south-korea.svg"
+                                        class="main-lang-option-item">
+                                        <img src="Content/Language/south-korea.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -44,7 +67,7 @@
                 <div class="section-dashboard-bg">
                     <img class="img-fluid" src="Content/00_BG/00_Mainpage_gallery_fill.png" alt="">
                 </div>
-                <div class="section-dashboard-content">
+                <div data-animation="animateFadein" class="section-dashboard-content">
                     <div class="section-dashboard-img">
                         <img class="img-fluid" src="Content/00_BG/00_Mainpage_star.png" alt="">
                     </div>
@@ -58,12 +81,12 @@
         <section class="wrap-gallery-section section-colections">
             <div class="section-collections-wrap">
                 <!-- section 1 -->
-                <div class="section-collection-content">
+                <div class="section-collection-content" id="section-1">
                     <div class="collection-header">
-                        <div class="collection-header-img">
+                        <div data-animation="animateFadein" class="collection-header-img">
                             <img class="img-fluid" src="Content/PNG/01_Giovanni Bartolena/01_Giovanni-Bartolena_fill.png" alt="">
                         </div>
-                        <div class="collection-header-info">
+                        <div data-animation="animateFadeUp" class="collection-header-info">
                             <div class="collection-header-info-name">
                                 Giovanni Bartolena
                             </div>
@@ -73,7 +96,7 @@
                         </div>
                     </div>
                     <div class="collection-main">
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Giovanni Bartolena`s Collection 1
                             </div>
@@ -114,7 +137,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Giovanni Bartolena`s Collection 2 - Hightest Auction Price
                             </div>
@@ -156,12 +179,12 @@
                     </div>
                 </div>
                 <!-- section 2 -->
-                <div class="section-collection-content">
+                <div class="section-collection-content" id="section-2">
                     <div class="collection-header">
-                        <div class="collection-header-img">
+                        <div data-animation="animateFadein" class="collection-header-img">
                             <img class="img-fluid" src="Content/PNG/02_Jean-Augustin Franquelin/02_Jean-Augustin-Franquelin_fill.png" alt="">
                         </div>
-                        <div class="collection-header-info">
+                        <div data-animation="animateFadeUp" class="collection-header-info">
                             <div class="collection-header-info-name">
                                 Jean-Augustin Franquelin
                             </div>
@@ -171,7 +194,7 @@
                         </div>
                     </div>
                     <div class="collection-main">
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Jean-Augustin Franquelin`s Collection 1
                             </div>
@@ -212,7 +235,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Jean-Augustin Franquelin`s Collection 2 - Highest Auction Price
                             </div>
@@ -256,13 +279,13 @@
                     </div>
                 </div>
                 <!-- section 3 -->
-                <div class="section-collection-content">
+                <div class="section-collection-content" id="section-3">
                     <div class="collection-header">
-                        <div class="collection-header-img">
+                        <div data-animation="animateFadein" class="collection-header-img">
                             <img class="img-fluid" src="Content/PNG/03_Amede Modigliani/03_Amede-Modigliani_fill.png"
                                 alt="">
                         </div>
-                        <div class="collection-header-info">
+                        <div data-animation="animateFadeUp" class="collection-header-info">
                             <div class="collection-header-info-name">
                                 Amede Modigliani
                             </div>
@@ -272,7 +295,7 @@
                         </div>
                     </div>
                     <div class="collection-main">
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Amedeo`s Modigliani Collection 1
                             </div>
@@ -306,7 +329,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Amedeo`s Modigliani Collection 2
                             </div>
@@ -348,7 +371,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Amedeo`s Modigliani Collection 3
                             </div>
@@ -372,7 +395,7 @@
                                         </div>
                                         <div class="collection-main-items-content-info-right-price">
                                             <p>Offer Price</p>
-                                            <span>USTD 154,000,000</span>
+                                            <span>USDT 154,000,000</span>
                                         </div>
                                     </div>
                                 </div>
@@ -394,7 +417,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Amedeo`s Modigliani Collection 4 - Highest Auction Price(Painting)
                             </div>
@@ -420,7 +443,7 @@
                                         </div>
                                         <div class="collection-main-items-content-info-right-price">
                                             <p>Offer Price</p>
-                                            <span>USTD 170,405,000</span>
+                                            <span>USDT 170,405,000</span>
                                         </div>
                                     </div>
                                 </div>
@@ -449,12 +472,12 @@
                     </div>
                 </div>
                 <!-- section 4 -->
-                <div class="section-collection-content">
+                <div class="section-collection-content" id="section-4">
                     <div class="collection-header">
-                        <div class="collection-header-img">
+                        <div data-animation="animateFadein" class="collection-header-img">
                             <img class="img-fluid" src="Content/PNG/04_Alberto Giacometti/04_Alberto-Giacometti_fill.png" alt="">
                         </div>
-                        <div class="collection-header-info">
+                        <div data-animation="animateFadeUp" class="collection-header-info">
                             <div class="collection-header-info-name">
                                 Alberto Giacometti
                             </div>
@@ -464,7 +487,7 @@
                         </div>
                     </div>
                     <div class="collection-main">
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Alberto Giacometti`s Collection 1
                             </div>
@@ -507,7 +530,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Alberto Giacometti`s Collection 2
                             </div>
@@ -548,7 +571,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Alberto Giacometti`s Collection 3 - Highest Auction Price(Painting)
                             </div>
@@ -585,7 +608,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collection-main-items">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
                             <div class="collection-main-items-title">
                                 Alberto Giacometti`s Collection 4 - Highest Auction Price(Drawing)
                             </div>
@@ -628,6 +651,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Popup -->
+        <section class="wrap-main-popup">
+            <div id="boxes">
+                <div id="dialog" class="window">
+                    <div id="san">
+                        <a href="#" class="close agree"><img src="Content/PNG/x.png" class="close-img"></a>
+                        <a target="_blank">
+                            <img class="img-fluid wrap-main-popup-img" src="Content/PNG/001.png">
+                        </a>
+                </div>
+            </div>
+                <div id="mask"></div>
             </div>
         </section>
     </main>

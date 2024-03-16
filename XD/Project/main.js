@@ -1,27 +1,27 @@
 
-$(document).ready(function() { 
-  var id = '#dialog';
-  var maskHeight = $(document).height();
-  var maskWidth = $(window).width();
-  $('#mask').css({'width':maskWidth,'height':maskHeight}); 
-  $('#mask').fadeIn(500); 
-  $('#mask').fadeTo("slow",0.9); 
-        var winH = $(window).height();
-  var winW = $(window).width();
-        $(id).css('top',  winH/2-$(id).height()/2);
-  $(id).css('left', winW/2-$(id).width()/2);
-     $(id).fadeIn(500);  
-     $('.window .close').click(function (e) {
-  e.preventDefault();
-  $('#mask').hide();
-  $('.window').hide();
-     });  
-     $('#mask').click(function () {
-  $(this).hide();
-  $('.window').hide();
- });  
+// $(document).ready(function() { 
+//   var id = '#dialog';
+//   var maskHeight = $(document).height();
+//   var maskWidth = $(window).width();
+//   $('#mask').css({'width':maskWidth,'height':maskHeight}); 
+//   $('#mask').fadeIn(500); 
+//   $('#mask').fadeTo("slow",0.9); 
+//         var winH = $(window).height();
+//   var winW = $(window).width();
+//         $(id).css('top',  winH/2-$(id).height()/2);
+//   $(id).css('left', winW/2-$(id).width()/2);
+//      $(id).fadeIn(500);  
+//      $('.window .close').click(function (e) {
+//   e.preventDefault();
+//   $('#mask').hide();
+//   $('.window').hide();
+//      });  
+//      $('#mask').click(function () {
+//   $(this).hide();
+//   $('.window').hide();
+//  });  
  
-});
+// });
 
 
 new Swiper('.swiper-user-case', {
@@ -228,12 +228,6 @@ const observer = new IntersectionObserver((entries) => {
 
 animatedEls.forEach((el) => observer.observe(el));
 
-
-$(window).on('load', function () {
-    console.log("true")
-});
-
-
 function clickRoadMap(element){
     var parent = $(element).parents(".timeline-tab-items");
     var idTab = $(element).parents(".timeline-tab-items").data("id-tab");
@@ -246,11 +240,69 @@ function clickRoadMap(element){
     }
 }
 
+$(document).on('click touchend', function(event) {
+  if (!$(event.target).hasClass('main-nav-category2') && !$(event.target).hasClass('main-nav-category2-items--active') && !$(".main-nav-category2").hasClass("d-none") && !$(event.target).hasClass("main-nav-category1-items-links")) {
+   $(".main-nav-category2").addClass("d-none");
+  }
+});
+
+function yes_redirect_url(){
+    if(document.URL.includes("gallery.html")){
+        $(".main-nav-category2").toggleClass("d-none");
+        
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+$(".main-nav-category2-items--active").click(function() {
+    var section = $(this).data("scroll");
+    $('html,body').animate({
+        scrollTop: $('#' + section).offset().top},
+        50);
+});
+
+var dataImgPopup = [{
+    srcImg: "Content/PNG/001.png"
+},
+{
+    srcImg: "Content/PNG/002.png"
+}
+]
+
+$(".collection-main-button button").on("click", function(){
+    $(".wrap-main-popup-img").attr("src", dataImgPopup[Math.floor(Math.random() * 2)].srcImg);
+    popupByIt();
+});
+
+function popupByIt(){
+      var id = '#dialog';
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  $('#mask').css({'width':maskWidth,'height':maskHeight}); 
+  $('#mask').fadeIn(500); 
+  $('#mask').fadeTo("slow",0.9); 
+        var winH = $(window).height();
+  var winW = $(window).width();
+        $(id).css('top',  winH/2-$(id).height()/2);
+  $(id).css('left', winW/2-$(id).width()/2);
+     $(id).fadeIn(500);  
+     $('.window .close').click(function (e) {
+  e.preventDefault();
+  $('#mask').hide();
+  $('.window').hide();
+     });  
+     $('#mask').click(function () {
+  $(this).hide();
+  $('.window').hide();
+ });  
+}
+
 $(".main-lang-dropdown").on('click', function(){
     $(this).toggleClass('active');
 })
-
-
 
 const langs = document.querySelector(".langs"),
     link = document.querySelectorAll(".main-lang-option-item");
@@ -260,10 +312,12 @@ const lang = localStorage.getItem("lang") || "english",
 
 
 if(lang==="english"){
-    $('.main-lang-text').val(link[0].getAttribute("language"));
+    $(".main-lang-img").attr("src", link[0].getAttribute("language-src"));
+    $(".main-lang-option-item[data-lang='english']").addClass("d-none");
     changeLanguage('english');
 } else{
-    $('.main-lang-text').val(link[langIndex].getAttribute("language"));
+    $(".main-lang-img").attr("src", link[langIndex].getAttribute("language-src"));
+    link[langIndex].classList.add("d-none")
     changeLanguage(lang);
 
 }
@@ -271,7 +325,10 @@ if(lang==="english"){
 link.forEach((op, i) => 
     {
         op.addEventListener("click", ()=>{
-            $('.main-lang-text').val(op.getAttribute("language"));
+            $(".main-lang-img").attr("src", op.getAttribute("language-src"));
+            $(".main-lang-option-item").removeClass("d-none");
+            op.classList.add("d-none");
+
 
             const attr = op.dataset.lang;
 

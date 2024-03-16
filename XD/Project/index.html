@@ -16,41 +16,47 @@
     <header class="wrap-header">
         <div class="wrap-header-main">
             <div class="wrap-header-main-logo">
-                <img src="Content/PNG/logo_header.png" alt="">
+                <a href="index.html"><img src="Content/PNG/logo_header.png" alt=""></a>
             </div>
-            <div class="wrap-header-main-lang">
-                <div class="main-lang-dropdown">
-                    <input type="text" class="main-lang-text" placeholder="ENG" readonly>
-                    <div class="main-lang-option">
-                        <div data-lang="english" language="ENG" class="main-lang-option-item">
-                            ENG
-                        </div>
-                        <div data-lang="korean" language="KOR" class="main-lang-option-item">
-                            KOR
-                        </div>
-                        <div data-lang="vietnamese" language="VIE" class="main-lang-option-item d-none">
-                            VIE
-                        </div>
-                    </div>
+            <div class="wrap-header-main-nav">
+                <div class="header-main-nav">
+                    <ul class="main-nav-category1">
+                        <li class="main-nav-category1-items">
+                            <a class="main-nav-category1-items-links" href="gallery.html" onclick="return yes_redirect_url();">Gallery</a>
+                            <ul class="main-nav-category2 d-none">
+                                <li class="main-nav-category2-items">Auction Artist</li>
+                                <li class="main-nav-category2-items">
+                                    <a href="#">Giovanni Bartolena</a>
+                                </li>
+                                <li class="main-nav-category2-items">
+                                    <a href="#">Jean-Augustin Franquelin</a>
+                                </li>
+                                <li class="main-nav-category2-items">
+                                    <a href="#">Amede Modigliani</a>
+                                </li>
+                                <li class="main-nav-category2-items">
+                                    <a href="#">Alberto Giacometti</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-category1-items">
+                            <div class="main-lang-dropdown">
+                                <img class="img-fluid main-lang-img" src="Content/Language/eng.svg" alt="">
+                                <div class="main-lang-option">
+                                    <div data-lang="english" language-src="Content/Language/eng.svg" class="main-lang-option-item">
+                                        <img src="Content/Language/eng.svg" alt="">
+                                    </div>
+                                    <div data-lang="korean" language-src="Content/Language/south-korea.svg" class="main-lang-option-item">
+                                        <img src="Content/Language/south-korea.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-    <!-- <section class="wrap-main-popup">
-        <div id="boxes">
-            <div id="dialog" class="window">
-                <div id="san">
-                    <a href="#" class="close agree"><img src="Content/PNG/x.png" class="close-img"></a>
-                    <a href="https://www.forbesindia.com/showstory.php?flag=p&id=90653" target="_blank">
-                        <img class="img-fluid" src="Content/PNG/popup_00.png">
-                    </a>
-                </div>
-            </div>
-            <div
-                id="mask">
-            </div>
-        </div>
-    </section> -->
     <main class="wrap-main">
         <!-- Revolutionizing E-commerce GOMDORI's Pioneering Web3 Integration in Global Commerce -->
         <section class="wrap-main-section section-2 text-center">
@@ -75,16 +81,12 @@
         </section>
         <!-- Statup visit tranding -->
         <section class="wrap-main-section section-gate">
-            <div data-animation="animateFadeUp" class="container section-gate-wrap">
+            <div data-animation="animateFadein" class="container section-gate-wrap">
                 <div class="gate-wrap-content">
                     <div class="gate-wrap-item">
                         <div class="gate-wrap-item-img">
                             <img class="img-fluid" src="Content/PNG/visit.jpg" alt="">
                         </div>
-                        <!-- <div class="gate-wrap-item-button">
-                            <a href="https://www.gate.io/startup/1248" id="gate-button1" 
-                            target="_blank">Visit</a>
-                        </div> -->
                     </div>  
                     <div class="gate-wrap-item">
                         <div class="gate-wrap-item-img">
@@ -1694,20 +1696,6 @@
                 </div>
             </div>
         </section>
-        <!-- Popup
-        <section class="wrap-main-popup">
-            <div id="boxes">
-                <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
-                    <div id="san">
-                        <a href="#" class="close agree"><img src="close-icon.png" width="25"
-                                style="float:right; margin-right: -25px; margin-top: -20px;"></a>
-                        <img src="Content/Partners/investor_01.png" width="450">
-                    </div>
-                </div>
-                <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask">
-                </div>
-            </div>
-        </section> -->
     </main>
     <footer class="wrap-footer">
         <section class="wrap-footer-section section-info">
