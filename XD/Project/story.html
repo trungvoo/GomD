@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GomDori</title>
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="story.css">
+
+</head>
+<body>
+    <header class="wrap-header">
+        <div class="wrap-header-main">
+            <div class="wrap-header-main-logo">
+                <a href="index.html"><img src="Content/PNG/logo_header.png" alt=""></a>
+            </div>
+            <div class="wrap-header-main-nav">
+                <div class="header-main-nav">
+                    <ul class="main-nav-category1">
+                        <li class="main-nav-category1-items">
+                            <a class="main-nav-category1-items-links" href="gallery.html" onclick="return yes_redirect_url();">Gallery</a>
+                            <ul class="main-nav-category2 d-none">
+                                <li class="main-nav-category2-items">Auction Artist</li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-1">
+                                    Giovanni Bartolena
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-2">
+                                    Jean-Augustin Franquelin
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-3">
+                                    Amede Modigliani
+                                </li>
+                                <li class="main-nav-category2-items main-nav-category2-items--active" data-scroll="section-4">
+                                    Alberto Giacometti
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-category1-items">
+                            <div class="main-lang-dropdown">
+                                <img class="img-fluid main-lang-img" src="Content/Language/eng.svg" alt="">
+                                <div class="main-lang-option">
+                                    <div data-lang="english" language-src="Content/Language/eng.svg"
+                                        class="main-lang-option-item">
+                                        <img src="Content/Language/eng.svg" alt="">
+                                    </div>
+                                    <div data-lang="korean" language-src="Content/Language/south-korea.svg"
+                                        class="main-lang-option-item">
+                                        <img src="Content/Language/south-korea.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrap-main">
+        <!-- section dashboard -->
+        <section class="wrap-story-section section-story-dashboard">
+            <div class="section-story-dashboard-wrap">
+                <div class="story-dashboard-content">
+                    <div class="section-story-dashboard-title">
+                        Purpose of Gomdori
+                    </div>
+                    <div class="section-story-dashboard-description">
+                        <p>
+                            The Gomdori Crypto Project is focused on securing loyal users worldwide through a search-based AI tool, with the goal of
+                            consolidating an ecosystem that includes product sales, organic marketing, reward token distribution, and offering
+                            discounts and free services (including goods) through memberships. The ultimate aim is to construct a virtual nation.
+                        </p>
+                        <p>
+                            Already, Gomdori has established alliances in various sectors such as accommodation, medical, education, commerce,
+                            logistics, culture, and history. Utilizing this foundation, it aims to provide global loyal users with the freedom
+                            to enjoy economic activities, cultural pursuits, and hobbies.
+                        </p>
+                    </div>
+                </div>
+                <div class="story-dashboard-img-list">
+                    <div class="story-dashboard-img-items">
+                        <div class="story-dashboard-img-items-icon">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_icon.png" alt="">
+                        </div>
+                        <div class="story-dashboard-img-items-thumb">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="story-dashboard-img-items">
+                        <div class="story-dashboard-img-items-icon">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_icon.png" alt="">
+                        </div>
+                        <div class="story-dashboard-img-items-thumb">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_img2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="story-dashboard-img-items">
+                        <div class="story-dashboard-img-items-icon">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_icon.png" alt="">
+                        </div>
+                        <div class="story-dashboard-img-items-thumb">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_img3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="story-dashboard-img-items">
+                        <div class="story-dashboard-img-items-icon">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_icon.png" alt="">
+                        </div>
+                        <div class="story-dashboard-img-items-thumb">
+                            <img class="img-fluid" src="Content/PNG/Mainpage_story_img4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section collection -->
+        <section class="wrap-story-section section-colections">
+            <div class="section-collections-wrap">
+                <!-- Collection 1 -->
+                <div class="section-collections-items">
+                    <div class="section-collections-items-img">
+                        <img class="img-fluid" src="Content/PNG/Story_section/Story_section_img1.png" alt="">
+                    </div>
+                    <div class="section-collections-items-content">
+                        <div class="section-collections-items-content-logo">
+                            <img class="img-fluid" src="Content/PNG/Story_section/Story_section_icon1.png" alt="">
+                        </div>
+                        <div class="section-collections-items-content-title">
+                            KOREAN GOMDori
+                        </div>
+                        <div class="section-collections-items-content-description">
+                            Country | Republic of Korea
+                            <br>
+                            Identity | Traditional Personality
+                            <br>
+                            Working Business | Tour Guide, introduce K-Culture, Tour, HistoryCollaboration with KCT,
+                            <br>
+                            K-Medical, K-Fashion
+                        </div>
+                    </div>
+                </div>
+                <!-- Collection 2 -->
+                <div class="section-collections-items">
+                    <div class="section-collections-items-img">
+                        <img class="img-fluid" src="Content/PNG/Story_section/Story_section_img2.png" alt="">
+                    </div>
+                    <div class="section-collections-items-content">
+                        <div class="section-collections-items-content-logo">
+                            <img class="img-fluid" src="Content/PNG/Story_section/Story_section_icon2.png" alt="">
+                        </div>
+                        <div class="section-collections-items-content-title">
+                            VIETNAMESE GOMDori
+                        </div>
+                        <div class="section-collections-items-content-description">
+                            Country | Vietnam 
+                            <br>
+                            Identity | Comfortable and Strong 
+                            <br>
+                            Working Business | Sell Customer goods, Marketing and Logistic
+                            Collaboration with VTC Online, 
+                            <br>
+                            Mind Ventures and VTV Live
+                        </div>
+                    </div>
+                </div>
+                <!-- Collection 3 -->
+                <div class="section-collections-items">
+                    <div class="section-collections-items-img">
+                        <img class="img-fluid" src="Content/PNG/Story_section/Story_section_img3.png" alt="">
+                    </div>
+                    <div class="section-collections-items-content">
+                        <div class="section-collections-items-content-logo">
+                            <img class="img-fluid" src="Content/PNG/Story_section/Story_section_icon3.png" alt="">
+                        </div>
+                        <div class="section-collections-items-content-title">
+                            Thailand GOMDori
+                        </div>
+                        <div class="section-collections-items-content-description">
+                            Country | Thailand 
+                            <br>
+                            Identity | Beauty and Fashionable 
+                            <br>
+                            Working Business | Sell Hair Devise and Women Fashion Collaboration
+                            with BEAUTRIUM and 
+                            <br>
+                            YEOJA Fashion Brand
+                        </div>
+                    </div>
+                </div>
+                <!-- Collection 4 -->
+                <div class="section-collections-items">
+                    <div class="section-collections-items-img">
+                        <img class="img-fluid" src="Content/PNG/Story_section/Story_section_img4.png" alt="">
+                    </div>
+                    <div class="section-collections-items-content">
+                        <div class="section-collections-items-content-logo">
+                            <img class="img-fluid" src="Content/PNG/Story_section/Story_section_icon4.png" alt="">
+                        </div>
+                        <div class="section-collections-items-content-title">
+                            INDIAN GOMDori
+                        </div>
+                        <div class="section-collections-items-content-description">
+                            Country | India 
+                            <br>
+                            Identity | Charisma and Royal 
+                            <br>
+                            Working Business | Global Marketing And Communication Collaboration : The
+                            Crypto Launchpad 
+                            <br>
+                            to global Communication and Government
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="wrap-footer">
+        <section class="wrap-footer-section section-info">
+            <div class="container section-info-wrap">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="section-info-wrap-title">
+                            About Us
+                        </div>
+                        <div class="section-info-wrap-desc">
+                            Transforming E-commerce: GOMDORI's Trailblazing Integration of Web3 in Global Commerce Transitioning from Web2 to Web3:
+                            GOMDORI's Evolution into Decentralized Commerce.
+                        </div>
+                        <div class="section-info-wrap-item">
+                            <ul>
+                                <li>
+                                    <a href="Content/WhitePaper/GOMD_Whiteparer.html">
+                                        WhitePaper
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-lg-0 mt-3">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section-info-wrap-title">
+                                    Community
+                                </div>
+                                <div class="section-info-wrap-item">
+                                    <ul>
+                                        <li>
+                                            <a href="https://twitter.com/Gomdori_GOMD" target="_blank">
+                                                X
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/GOMD_VIETNAM" target="_blank">
+                                                Telegram VN
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/GOMDORItoken" target="_blank">
+                                                Telegram Global
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-lg-0 mt-3">
+                                <div class="section-info-wrap-title">
+                                    Legal
+                                </div>
+                                <div class="section-info-wrap-item">
+                                    <ul>
+                                        <li>
+                                            <a href="Content/Legal/TermOfUse.html" target="_blank">
+                                                Term of Use
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Content/Legal/CookiePolicy.html" target="_blank">
+                                                Cookie Policy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Content/Legal/PrivacyPolicy.html" target="_blank">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Content/Legal/SecurityPolicy.html" target="_blank">
+                                                Security Policy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrap-footer-section section-address">
+            <div class="container section-address-wrap">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-address-wrap-title">
+                            Address
+                        </div>
+                        <div class="section-address-wrap-content">
+                            <div class="section-address-wrap-items">
+                                <img class="img-fluid" src="Content/Footer/footer_02.png" alt="">
+                                <span class="section-address-wrap-items-label">No.1, Street 2, CityLand Park Hills, Ward 10, Go Vap, HCMC.</span>
+                            </div>
+                            <div class="section-address-wrap-items">
+                                <img class="img-fluid" src="Content/Footer/footer_03.png" alt="">
+                                <span class="section-address-wrap-items-label">No.26 Soi Sukhumvit 64 Prakhanong Tai Sub-District, Prakhanong District Bangkok</span>
+                            </div>
+                            <div class="section-address-wrap-items">
+                                <img class="img-fluid" src="Content/Footer/footer_04.png" alt="">
+                                <span class="section-address-wrap-items-label">LG39, Xth Central Mall, Near DMart, Mahavir Nagar, Kandivali (W), Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-address-wrap-logo">
+                            <img class="img-fluid" src="Content/Footer/logo_footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrap-footer-section section-copyright">
+            <div class="section-copyright-title">
+                ⓒ 2023 - Copyright by Gomi Corporation
+            </div>
+        </section>
+        <div class="scripts">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script src="data.js"></script>
+            <script src="main.js"></script>
+        </div>
+    </footer>
+</body>
+</html>  
