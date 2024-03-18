@@ -12,7 +12,7 @@ const dataLang = {
         },
         sectionGate:{
             buttons:{
-                btn1: "Visit",
+                btn1: "Trading Now",
                 btn2: "Trading Now"
             }
         },
@@ -487,7 +487,7 @@ const dataLang = {
         },
         sectionGate:{
             buttons:{
-                btn1: "방문하기",
+                btn1: "거래하기",
                 btn2: "거래하기"
             }
         },
@@ -957,7 +957,7 @@ const dataLang = {
         },
         sectionGate:{
             buttons:{
-                btn1: "Visit",
+                btn1: "Trading Now",
                 btn2: "Trading Now"
             }
         },
