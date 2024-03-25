@@ -7,7 +7,9 @@ const dataLang = {
             description: "From <span>Web2 to Web3: GOMDORI's Journey</span> Towards Decentralized Commerce",
             buttons: {
                 btn1: "white Paper",
-                btn2: "legal opinion"
+                btn1Link: "Content/WhitePaper/GOMD_Whiteparer.html",
+                btn2: "legal opinion",
+                btn2Link: "Content/WhitePaper/GOMD_Legal.html"
             }
         },
         sectionGate:{
@@ -482,7 +484,9 @@ const dataLang = {
             description: "<span>웹2에서 웹3로 : GOMDORI</span>의 탈중앙화 상거래를 향한 여정",
             buttons: {
                 btn1: "백서",
-                btn2: "법률 검토서"
+                btn1Link: "Content/WhitePaper/GOMD_Whiteparer_KR.html",
+                btn2: "법률 검토서",
+                btn2Link: "Content/WhitePaper/GOMD_Legal.html"
             }
         },
         sectionGate:{

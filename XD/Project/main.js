@@ -345,7 +345,10 @@ function changeLanguage(lang){
     $(".section-2-title").html(dataLang[lang].section2.title);
     $(".section-2-description").html(dataLang[lang].section2.description);
     $("#section-2-wrapbtn-btn1").html(dataLang[lang].section2.buttons.btn1);
+    $("#section-2-wrapbtn-btn1").attr("href", dataLang[lang].section2.buttons.btn1Link);
     $("#section-2-wrapbtn-btn2").html(dataLang[lang].section2.buttons.btn2);
+    $("#section-2-wrapbtn-btn2").attr("href", dataLang[lang].section2.buttons.btn2Link);
+
     // section gate
     $("#gate-button1").html(dataLang[lang].sectionGate.buttons.btn1);
     $("#gate-button2").html(dataLang[lang].sectionGate.buttons.btn2);
