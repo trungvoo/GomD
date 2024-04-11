@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Content/CSS/main.css">
+    <link rel="stylesheet" href="Content/CSS/home.css">
 
 </head>
 
@@ -24,7 +25,7 @@
                             <img src="Content/Resource/Header/header-logo.svg" alt="">
                         </a>
                     </div>
-                    <div class="d-flex align-items-center main-header-nav-left-menu">
+                    <div class="d-flex main-header-nav-left-menu">
                         <ul class="d-flex list-unstyled header-nav-left-menu-content">
                             <li class="header-nav-left-menu-items">
                                 <a href="">Reward</a>
@@ -33,12 +34,24 @@
                                 <a href="">Staking</a>
                             </li>
                             <li class="header-nav-left-menu-items">
-                                <a href="">Story</a>
+                                <a href="story.html">Story</a>
                             </li>
                             <li class="header-nav-left-menu-items">
                                 <a href="">Gallery</a>
                             </li>
                         </ul>
+                        <div class="menu-mobile-link-bottom">
+                            <div class="menu-mobile-bottom-link-connect">
+                                <a href="">
+                                    Connect Wallet
+                                </a>
+                            </div>
+                            <div class="menu-mobile-bottom-link-paper">
+                                <a href="https://gomdori.gitbook.io/gomdori">
+                                    White Paper
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="d-flex main-header-nav-right">
@@ -48,34 +61,44 @@
                         </a>
                     </div>
                     <div class="main-header-nav-right-paper">
-                        <a href="">
+                        <a href="https://gomdori.gitbook.io/gomdori">
                             White Paper
                         </a>
                     </div>
-                    <div class="main-header-nav-right-language">
+                    <div class="d-flex align-items-center main-header-nav-right-language">
                         <div class="main-lang-dropdown">
-                            <img class="img-fluid main-lang-img" src="Content/Resource/Header/header-language-kr.svg"
-                                alt="">
+                            <img class="img-fluid main-lang-img"
+                                src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
                             <div class="main-lang-option">
-                                <div data-lang="english" language-src="Content/Resource/Header/header-language-kr.svg"
+                                <div data-lang="english"
+                                    language-src="Content/Resource/Header/PNG/header-language-eng.png"
                                     class="main-lang-option-item">
-                                    <img src="Content/Resource/Header/header-language-kr.svg" alt="">
+                                    <img src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
                                 </div>
-                                <div data-lang="korean" language-src="Content/Resource/Header/header-language-kr.svg"
+                                <div data-lang="korean"
+                                    language-src="Content/Resource/Header/PNG/header-language-kr.png"
                                     class="main-lang-option-item">
-                                    <img src="Content/Resource/Header/header-language-kr.svg" alt="">
+                                    <img src="Content/Resource/Header/PNG/header-language-kr.png" alt="">
+                                </div>
+                                <div data-lang="vietnam"
+                                    language-src="Content/Resource/Header/PNG/header-language-vn.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-vn.png" alt="">
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="d-flex d-lg-none align-items-center main-header-nav-right-menu">
+                        <i class='bx bx-menu'></i>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="main-body">
+        <div class="star-field"></div>
         <!-- Mainpage -->
         <section class="main-body-mainpage">
-
             <span class="main-body-mainpage-star"></span>
             <span class="main-body-mainpage-star"></span>
             <span class="main-body-mainpage-star"></span>
@@ -83,8 +106,8 @@
             <span class="main-body-mainpage-star"></span>
             <span class="main-body-mainpage-star"></span>
 
-            <div class="row align-items-center main-body-mainpage-wrap w-100 z-1">
-                <div class="col-lg-5 col-5 offset-1 main-body-mainpage-left">
+            <div class="row align-items-center main-body-mainpage-wrap w-100 z-3">
+                <div class="col-lg-5 col-12 offset-lg-1 offset-0 main-body-mainpage-left">
                     <div class="main-body-mainpage-left-logo">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 780 160"
@@ -118,10 +141,12 @@
                         <p>If you connect your wallet right now,</p>
                         <p>
                             you can use the tokens you have to
-                            <span>E</span>
-                            <span>A</span>
-                            <span>R</span>
-                            <span>N</span>
+                            <b class="d-inline-block">
+                                <span>E</span>
+                                <span>A</span>
+                                <span>R</span>
+                                <span>N</span>
+                            </b>
                             with Gomidori Universe
                         </p>
                     </div>
@@ -134,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-6 main-body-mainpage-right">
+                <div class="col-lg-6 col-12 main-body-mainpage-right">
                     <div class="main-body-mainpage-right-content">
                         <img class="mainpage-right-content-img-earth" src="Content/Resource/Main/Mainpage/SVG/earth.svg"
                             alt="">
@@ -163,18 +188,7 @@
                     <div class="swiper swiper-gomdX">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
-                                    target="_blank">
-                                    <div class="swiper-slide--items">
-                                        <div class="swiper-slide--items-img text-center">
-                                            <img class="img-fluid" src="Content/Resource/Main/Mainpage/PNG/image13.png"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1774708589841596734/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -184,7 +198,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1774558896176189724/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -194,7 +208,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1772892207835402683/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -204,7 +218,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1772584608770445620/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -214,7 +228,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1772253383027565008/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -224,7 +238,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1771136411108077864/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -234,7 +248,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1768655700195234173/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -244,7 +258,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1768450580639600938/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -254,7 +268,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1767790729617908188/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -264,7 +278,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="https://foxstoryindia.com/2023/11/16/gomdori-blockchain-powered-paradigm-shift-in-e-commerce-dynamics/"
+                                <a href="https://twitter.com/Gomdori_GOMD/status/1749153585412354224/photo/1"
                                     target="_blank">
                                     <div class="swiper-slide--items">
                                         <div class="swiper-slide--items-img text-center">
@@ -313,28 +327,63 @@
                     <div class="GomdOfficial-wrap-tabs-content">
                         <div data-id-content="wallet"
                             class="GomdOfficial-wrap-tabs-content-items GomdOfficial-wrap-tabs-content-items--active">
-                            <div class="GomdOfficial-wrap-tabs-content-items-img">
-                                <img src="Content/Resource/Main/Officical/SVG/wallet.svg" alt="">
-                            </div>
-                            <div class="GomdOfficial-wrap-tabs-content-items-title">
-                                Burito Wallet
-                            </div>
+                            <a href="https://www.burritowallet.com/" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/wallet.svg" alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    Burrito Wallet
+                                </div>
+                            </a>
                         </div>
                         <div data-id-content="exchange" class="GomdOfficial-wrap-tabs-content-items">
-                            <div class="GomdOfficial-wrap-tabs-content-items-img">
-                                <img src="Content/Resource/Main/Officical/SVG/wallet.svg" alt="">
-                            </div>
-                            <div class="GomdOfficial-wrap-tabs-content-items-title">
-                                Exchange
-                            </div>
+                            <a href="https://www.bitget.com/en-GB/spot/GOMDUSDT" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/exchange_01.svg"
+                                        alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    Bitget
+                                </div>
+                            </a>
+                            <a href="https://www.gate.io/vi/trade/GOMD_USDT" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/exchange_02.svg"
+                                        alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    Gate io
+                                </div>
+                            </a>
                         </div>
                         <div data-id-content="community" class="GomdOfficial-wrap-tabs-content-items">
-                            <div class="GomdOfficial-wrap-tabs-content-items-img">
-                                <img src="Content/Resource/Main/Officical/SVG/wallet.svg" alt="">
-                            </div>
-                            <div class="GomdOfficial-wrap-tabs-content-items-title">
-                                Community
-                            </div>
+                            <a href="https://twitter.com/Gomdori_GOMD" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/community_02.svg"
+                                        alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    X app
+                                </div>
+                            </a>
+                            <a href="https://discord.gg/JDZyEZfWYU" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/community_03.svg"
+                                        alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    Discord
+                                </div>
+                            </a>
+                            <a href="https://t.me/GOMDORItoken" class="text-decoration-none">
+                                <div class="GomdOfficial-wrap-tabs-content-items-img">
+                                    <img class="img-fluid" src="Content/Resource/Main/Officical/SVG/community_01.svg"
+                                        alt="">
+                                </div>
+                                <div class="GomdOfficial-wrap-tabs-content-items-title">
+                                    Telegram Global
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -501,23 +550,15 @@
                 <div class="partners-wrap-content">
                     <div class="partners-wrap-content-marquee">
                         <div class="partners-wrap-content-marquee__group">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_01.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_02.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_03.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/nexpay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/innopay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/k-kconect.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/moonpay.svg" alt="">
                         </div>
                         <div aria-hidden="true" class="partners-wrap-content-marquee__group">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
                             <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
@@ -529,59 +570,42 @@
                     </div>
                     <div class="partners-wrap-content-marquee marquee--reverse">
                         <div class="partners-wrap-content-marquee__group">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/nexpay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/innopay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/k-kconect.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/moonpay.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_04.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_05.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/gs.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/vtc.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/venture.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/iconix.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/polygon-studios.svg" alt="">
                         </div>
-
                         <div aria-hidden="true" class="partners-wrap-content-marquee__group">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/nexpay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/innopay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/k-kconect.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/moonpay.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/visang.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/lotus.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/dwfabs.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/shopee.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/benspin-global.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/tosspayment.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/polygon-studios.svg" alt="">
                         </div>
                     </div>
                     <div class="partners-wrap-content-marquee">
                         <div class="partners-wrap-content-marquee__group">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/nexpay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/innopay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/k-kconect.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/moonpay.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_06.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/partner_07.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/wolfgang.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/vtv-live.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/thecrypto.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/aliniex.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/coincodex.svg" alt="">
                         </div>
                         <div aria-hidden="true" class="partners-wrap-content-marquee__group">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/grab.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/ahamove.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/easypay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/mindventure.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/s-oil.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/hyundai-oilbank.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/nexpay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/innopay.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/k-kconect.svg" alt="">
-                            <img class="img-fluid" src="Content/Resource/Main/Partners/moonpay.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/legalkornet.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/remitano.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/burrito.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/goolge-cloud.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/onramp-mony.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/certik.svg" alt="">
+                            <img class="img-fluid" src="Content/Resource/Main/Partners/coincodex.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -605,7 +629,7 @@
                         <div class="section-info-wrap-item">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="Content/WhitePaper/GOMD_Whiteparer.html">
+                                    <a href="https://gomdori.gitbook.io/gomdori">
                                         WhitePaper
                                     </a>
                                 </li>
