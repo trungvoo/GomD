@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOMDori</title>
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Content/CSS/main.css">
+    <link rel="stylesheet" href="Content/CSS/gallery.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-wrap">
+            <div class="d-flex align-items-center justify-content-between main-header-nav">
+                <div class="d-flex main-header-nav-left">
+                    <div class="main-header-nav-left-logo">
+                        <a href="index.html">
+                            <img class="img-fluid" loading="lazy" src="Content/Resource/Header/PNG/header-logo.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="d-flex main-header-nav-left-menu">
+                        <ul class="d-flex list-unstyled header-nav-left-menu-content">
+                            <li class="header-nav-left-menu-items">
+                                <a href="" target="_blank" data-pre="reward"
+                                    onclick="return yes_redirect_url(this);">Reward</a>
+                                <img src="Content/Resource/Header/PNG/pre_top.png" alt="">
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="" target="_blank" data-pre="staking"
+                                    onclick="return yes_redirect_url(this);">Staking</a>
+                                <img src="Content/Resource/Header/PNG/pre_top.png" alt="">
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="story.html">About</a>
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                        </ul>
+                        <div class="menu-mobile-link-bottom">
+                            <div class="menu-mobile-bottom-link-connect">
+                                <a href="" target="_blank" onclick="return yes_redirect_url_connect(this);">
+                                    Connect Wallet
+                                </a>
+                            </div>
+                            <div class="menu-mobile-bottom-link-paper">
+                                <a href="https://gomdori.gitbook.io/gomdori" target="_blank">
+                                    White Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex main-header-nav-right">
+                    <div class="main-header-nav-right-connect">
+                        <a href="" target="_blank" onclick="return yes_redirect_url_connect(this);" target="_blank">
+                            Connect Wallet
+                        </a>
+                    </div>
+                    <div class="main-header-nav-right-paper">
+                        <a href="https://gomdori.gitbook.io/gomdori" target="_blank">
+                            White Paper
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center main-header-nav-right-language">
+                        <div class="main-lang-dropdown">
+                            <img class="img-fluid main-lang-img"
+                                src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
+                            <div class="main-lang-option">
+                                <div data-lang="english"
+                                    language-src="Content/Resource/Header/PNG/header-language-eng.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
+                                </div>
+                                <div data-lang="korean"
+                                    language-src="Content/Resource/Header/PNG/header-language-kr.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-kr.png" alt="">
+                                </div>
+                                <div data-lang="vietnam"
+                                    language-src="Content/Resource/Header/PNG/header-language-vn.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-vn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-lg-none align-items-center main-header-nav-right-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrap-main">
+        <!-- section dashboard -->
+        <section class="wrap-gallery-section section-dashboard">
+            <div class="section-dashboard-wrap">
+                <div class="section-dashboard-bg">
+                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/00_Mainpage_gallery_fill.png" alt="">
+                </div>
+                <div data-animation="animateFadein" class="section-dashboard-content">
+                    <div class="section-dashboard-img">
+                        <img class="img-fluid" src="Content/Resource/Gallery/PNG/00_Mainpage_star.png" alt="">
+                    </div>
+                    <div class="section-dashboard-title">
+                        Start auction collection
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section collection -->
+        <section class="wrap-gallery-section section-colections">
+            <div class="section-collections-wrap">
+                <!-- section 1 -->
+                <div class="section-collection-content" id="section-1">
+                    <div class="collection-header">
+                        <div data-animation="animateFadein" class="collection-header-img">
+                            <img class="img-fluid"
+                                src="Content/Resource/Gallery/01_Giovanni Bartolena/01_Giovanni-Bartolena_fill.png"
+                                alt="">
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-header-info">
+                            <div class="collection-header-info-name">
+                                Giovanni Bartolena
+                            </div>
+                            <div class="collection-header-info-year">
+                                1966-1942
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-main">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Giovanni Bartolena`s Collection 1
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/01_Giovanni Bartolena/1_pic_01.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Natura Morta</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>Oil on panel, 33 x 53.5 cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 33,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Certificate
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/01_Giovanni Bartolena/1_xf_01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Giovanni Bartolena`s Collection 2 - Hightest Auction Price
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/01_Giovanni Bartolena/1_pic_02.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Piazza Cavour a Livorno</p>
+                                            <span>Oil Paint, 39.4 x 49.7 cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Sotheby’s Milan
+                                                <br>
+                                                19th Century Paintings and
+                                                <br>
+                                                Sculpture / Lot 92
+                                                <br>
+                                                Jun 18 2008
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 53,237</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section 2 -->
+                <div class="section-collection-content" id="section-2">
+                    <div class="collection-header">
+                        <div data-animation="animateFadein" class="collection-header-img">
+                            <img class="img-fluid"
+                                src="Content/Resource/Gallery/02_Jean-Augustin Franquelin/02_Jean-Augustin-Franquelin_fill.png"
+                                alt="">
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-header-info">
+                            <div class="collection-header-info-name">
+                                Jean-Augustin Franquelin
+                            </div>
+                            <div class="collection-header-info-year">
+                                1798 – 1839
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-main">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Jean-Augustin Franquelin`s Collection 1
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/02_Jean-Augustin Franquelin/2_pic_01.png"
+                                            alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Oil on canvas</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>33 x 53.5 cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 93,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Certificate
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/02_Jean-Augustin Franquelin/2_xf_01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Jean-Augustin Franquelin`s Collection 2 - Highest Auction Price
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/02_Jean-Augustin Franquelin/2_pic_02.png"
+                                            alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>The Attendant</p>
+                                            <span>Oil Paint, 39.4 x 49.7 cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Sotheby's New York -
+                                                <br>
+                                                Important 19th Century
+                                                <br>
+                                                European Paintings,
+                                                <br>
+                                                Drawings and Sculpture
+                                                <br>
+                                                May 03 2000
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 41,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section 3 -->
+                <div class="section-collection-content" id="section-3">
+                    <div class="collection-header">
+                        <div data-animation="animateFadein" class="collection-header-img">
+                            <img class="img-fluid"
+                                src="Content/Resource/Gallery/03_Amede Modigliani/03_Amede-Modigliani_fill.png" alt="">
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-header-info">
+                            <div class="collection-header-info-name">
+                                Amede Modigliani
+                            </div>
+                            <div class="collection-header-info-year">
+                                1884 – 1920
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-main">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Amedeo`s Modigliani Collection 1
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_01.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Amedeo Modigliani</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Portrait of a girl (1917)
+                                                <br>
+                                                Lithography 27/100, 81 x 60 cm
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 62,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Amedeo`s Modigliani Collection 2
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_02.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Portrait of Jeanne Hebuterne</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>Pencil on paper, 70.2 x 49.7cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 3,100,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Christian Parisot Certificate
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_xf_01.png" alt="">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_xf_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Amedeo`s Modigliani Collection 3
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_03.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Elvira</p>
+                                            <span>Oil on canvas, 33 x 54cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Oil on canvas, 33 x 54cm
+                                                <br>
+                                                33 x 54cm
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 154,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Certificate
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_xf_03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Amedeo`s Modigliani Collection 4 - Highest Auction Price(Painting)
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_04.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Nu couché</p>
+                                            <span>Oil on canvas, 59.9 x 92cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Christie's New York
+                                                <br>
+                                                The Artist's Muse / Lot 8 A
+                                                <br>
+                                                Nov 09 2015
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 170,405,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collection-main-items-content-desc">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_05.png" alt="">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_06.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Certificate
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/03_Amede Modigliani/3_xf_04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section 4 -->
+                <div class="section-collection-content" id="section-4">
+                    <div class="collection-header">
+                        <div data-animation="animateFadein" class="collection-header-img">
+                            <img class="img-fluid"
+                                src="Content/Resource/Gallery/04_Alberto Giacometti/04_Alberto-Giacometti_fill.png"
+                                alt="">
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-header-info">
+                            <div class="collection-header-info-name">
+                                Alberto Giacometti
+                            </div>
+                            <div class="collection-header-info-year">
+                                1901 – 1966
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-main">
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Alberto Giacometti`s Collection 1
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/03_Amede Modigliani/3_pic_01.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Unmo Seduto</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Mixed Media, 80 x 100 cm
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 62,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Certificate(Authenticity Certificate of Italian Cultural Heritage Administration)
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/04_Alberto Giacometti/4_xf_01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Alberto Giacometti`s Collection 2
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/04_Alberto Giacometti/4_pic_02.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Donna in piedi</p>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>Mixed Media, 52 x 35 cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 6,150,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-certificate">
+                                <div class="collection-main-certificate-arrow">
+                                    <img class="img-fluid" src="Content/Resource/Gallery/PNG/Arrow.png" alt="">
+                                </div>
+                                <div class="collection-main-certificate-title">
+                                    Authenticity Certificate of Italian Cultural Heritage Administration
+                                </div>
+                                <div class="collection-main-certificate-img">
+                                    <img class="img-fluid"
+                                        src="Content/Resource/Gallery/04_Alberto Giacometti/4_xf_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Alberto Giacometti`s Collection 3 - Highest Auction Price(Painting)
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/04_Alberto Giacometti/4_pic_03.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>Diego en chemise écossaise</p>
+                                            <span>Oil on canvas, 59.9 x 92cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Christie's New York
+                                                <br>
+                                                Impressionist & Modern Evening Sale
+                                                <br>
+                                                Nov 05 2013
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 32,645,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                        <div data-animation="animateFadeUp" class="collection-main-items">
+                            <div class="collection-main-items-title">
+                                Alberto Giacometti`s Collection 4 - Highest Auction Price(Drawing)
+                            </div>
+                            <div class="collection-main-items-content">
+                                <div class="collection-main-items-content-info">
+                                    <div class="collection-main-items-content-info-left">
+                                        <img class="img-fluid"
+                                            src="Content/Resource/Gallery/04_Alberto Giacometti/4_pic_04.png" alt="">
+                                    </div>
+                                    <div class="collection-main-items-content-info-right">
+                                        <div class="collection-main-items-content-info-right-title">
+                                            <p>FEMME NUE DEBOUT</p>
+                                            <span>Pencil on paper, 54.5 x 29.2cm</span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-feature">
+                                            <p>feature</p>
+                                            <span>
+                                                Sotheby's London
+                                                <br>
+                                                Impressionist, Modern & Surrealist
+                                                <br>
+                                                Art Evening
+                                                <br>
+                                                Sale / lot 34
+                                                <br>
+                                                Feb 05 2014
+                                            </span>
+                                        </div>
+                                        <div class="collection-main-items-content-info-right-price">
+                                            <p>Offer Price</p>
+                                            <span>USDT 1,022,500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-main-button">
+                                <button>
+                                    Buy it
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="wrap-footer-section section-copyright">
+            <div class="section-copyright-title">
+                ⓒ 2024 - Copyright by GOMDori Holdings Inc.
+            </div>
+            <div class="section-copyright-nav">
+                <ul>
+                    <li>
+                        <a href="Content/Legal/TermOfUse.html" target="_blank">Term of Use</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/CookiePolicy.html" target="_blank">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/PrivacyPolicy.html" target="_blank">Privace Policy</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/SecurityPolicy.html" target="_blank">Security Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-copyright-logo">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_01.png" alt="">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_02.png" alt="">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_03.png" alt="">
+            </div>
+        </section>
+        <section class="main-script">
+            <div class="main-script-wrap">
+                <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+                    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+                    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="Content/Script/main.js"></script>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
