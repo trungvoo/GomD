@@ -196,7 +196,6 @@ function eventToggleMenu() {
     });
 };
 
-
 //Event redirect_url Preparing
 function yes_redirect_url(param) {
     if ($(window).width() > 991) {
@@ -235,9 +234,6 @@ function yes_redirect_url_connect(param) {
 function changeEventBuyIt() {
     $(".collection-main-button button").html("Preparing");
 }
-
-
-
 
 if ($(window).width() < 991) {
 
