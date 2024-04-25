@@ -81,67 +81,6 @@
     animation-duration: 8s;
 }
 
-@keyframes animate-mainpage-star {
-    0% {
-        transform: rotate(315deg) translateX(0);
-        opacity: 0;
-    }
-
-    30% {
-        transform: rotate(315deg) translateX(-100);
-        opacity: 1;
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(315deg) translateX(-1000px);
-        opacity: 0;
-    }
-}
-
-.star-field {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    top: 0;
-}
-
-.star {
-    position: absolute;
-    width: 2px;
-    /* Breite eines Sterns */
-    height: 2px;
-    /* Höhe eines Sterns */
-    background-color: #766396;
-    /* Farbe der Sterne (weiß) */
-    border-radius: 50%;
-    /* Rundung für Sterneffekt */
-    animation: twinkling 3s infinite;
-    /* Twinkle-Animation */
-}
-
-/* Keyframes für das Twinkling */
-@keyframes twinkling {
-    0% {
-        opacity: 0;
-        /* Anfangsopazität auf 0 */
-    }
-
-    50% {
-        opacity: 1;
-        /* Halbzeit mit voller Opazität */
-    }
-
-    100% {
-        opacity: 0;
-        /* Endet mit 0 Opazität */
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .main-body-mainpage-star {
         display: none;
@@ -169,7 +108,7 @@
     stroke-dasharray: 1000px;
     stroke-dashoffset: 0;
     animation: G-logo-move 2s linear forwards;
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
 }
 
 @keyframes G-logo-move {
@@ -319,7 +258,7 @@
     margin-top: 50px;
     z-index: 9999;
     animation: mainpage-earth-circle 40s linear infinite;
-    animation-delay: 3s;
+    /* animation-delay: 3s;  */
 }
 
 @keyframes mainpage-earth-circle {
@@ -337,14 +276,13 @@
 .mainpage-right-content-img-kr,
 .mainpage-right-content-img-in {
     position: absolute;
-    max-width: 200px;
+    max-height: 200px;
     z-index: 1;
 }
 
 .mainpage-right-content-img-th {
     transform: rotate(320deg);
     animation: mainpage-img-country-th 2.5s ease-in-out forwards;
-    animation-delay: 3s;
 }
 
 @keyframes mainpage-img-country-th {
@@ -365,7 +303,6 @@
     left: calc(50% - 100px);
     top: calc(50% - 100px);
     animation: mainpage-img-country-vn 2.5s ease-in-out forwards;
-    animation-delay: 3s;
 }
 
 @keyframes mainpage-img-country-vn {
@@ -386,7 +323,6 @@
     left: calc(50% - 100px);
     top: calc(50% - 100px);
     animation: mainpage-img-country-kr 2.5s ease-in-out forwards;
-    animation-delay: 3s;
 }
 
 @keyframes mainpage-img-country-kr {
@@ -407,7 +343,6 @@
     left: calc(50% - 100px);
     top: calc(50% - 100px);
     animation: mainpage-img-country-in 2.5s ease-in-out forwards;
-    animation-delay: 3s;
 }
 
 @keyframes mainpage-img-country-in {
@@ -417,8 +352,8 @@
     }
 
     to {
-        left: calc(50% - 100px + 200px);
-        top: calc(50% - 100px - 90px);
+        left: calc(50% - 100px + 220px);
+        top: calc(50% - 100px - 60px);
     }
 }
 
@@ -436,7 +371,7 @@
     .mainpage-right-content-img-vn,
     .mainpage-right-content-img-kr,
     .mainpage-right-content-img-in {
-        max-width: 100px;
+        max-height: 120px;
     }
 
     .mainpage-right-content-img-th {
