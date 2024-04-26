@@ -1,5 +1,8 @@
 $(function () {
     eventClickTabs();
+    $(".button-stick-on-top").on('click', function () {
+        $("html, body").animate({ scrollTop: "0" }, 500);
+    });
 });
 
 function eventClickTabs() {
