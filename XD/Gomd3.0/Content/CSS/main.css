@@ -82,6 +82,7 @@ body {
     padding: 0;
     font-family: font-LaundryGothic-Regular;
     background: #161211;
+    text-rendering: optimizeSpeed;
 }
 
 * {

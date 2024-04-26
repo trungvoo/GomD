@@ -51,6 +51,30 @@
     color: var(--color-white);
 }
 
+@media only screen and (max-width: 991px) {
+    .magazine-mainpage-content p {
+        font-size: var(--size-mobile-title);
+        margin-bottom: 0;
+    }
+
+    .magazine-mainpage-content span {
+        font-size: 14px;
+    }
+
+    .magazine-mainpage-bottom {
+        height: 20px;
+    }
+
+    .magazine-mainpage-bottom span {
+        font-size: 10px;
+    }
+
+    .magazine-mainpage-bottom i {
+        font-size: 14px;
+        color: var(--color-white);
+    }
+}
+
 /* #endregion magazine mainpage */
 
 /* #region magazine wrap */
@@ -71,12 +95,20 @@
     font-family: font-Jalnan2;
 }
 
+@media only screen and (max-width: 991px) {
+    .magazine-wrap-title {
+        font-size: 18px;
+        height: 70px;
+    }
+}
+
+
 /* #endregion magazine wrap */
 
 /* #region magazine tabs */
 
 .magazine-wrap-tabs {
-    height: 90px;
+    min-height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +155,18 @@
 
 .tab-items [name^="tab"]:checked+label::before {
     display: block;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .magazine-wrap-tabs {
+        padding: 20px 0;
+    }
+
+    .tab-items {
+        margin: 20px 20px;
+        padding: 0;
+    }
 }
 
 /* #endregion magazine tabs */
@@ -229,6 +273,43 @@
 
 .magazine-post-list-items-right {
     text-align: right;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .magazine-items-title {
+        margin: 20px 0;
+    }
+
+    .magazine-items-title-text {
+        font-size: 23px;
+    }
+
+    .magazine-post-main-title {
+        margin: 20px 0;
+    }
+
+    .magazine-post-title-text {
+        font-size: 20px;
+    }
+
+    .magazine-post-list-items:not(:first-child) {
+        margin-top: 80px;
+    }
+
+    .magazine-post-list-items-left {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .magazine-post-list-items-left-desc {
+        margin: 20px 0;
+    }
+
+    .magazine-post-list-items-left-title-text a {
+        font-size: 20px;
+    }
+
 }
 
 /* #endregion magazine tabs-content */
