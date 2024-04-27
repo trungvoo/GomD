@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOMDori</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Content/CSS/main.min.css">
+    <link rel="stylesheet" href="Content/CSS/magazine-detail.min.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-wrap">
+            <div class="d-flex align-items-center justify-content-between main-header-nav">
+                <div class="d-flex main-header-nav-left">
+                    <div class="main-header-nav-left-logo">
+                        <a href="index.html">
+                            <img class="img-fluid" loading="lazy" src="Content/Resource/Header/PNG/header-logo.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="d-flex main-header-nav-left-menu">
+                        <ul class="d-flex list-unstyled header-nav-left-menu-content">
+                            <li class="header-nav-left-menu-items">
+                                <a href="" target="_blank" data-pre="reward"
+                                    onclick="return yes_redirect_url(this);">Reward</a>
+                                <img src="Content/Resource/Header/PNG/pre_top.png" alt="">
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="" target="_blank" data-pre="staking"
+                                    onclick="return yes_redirect_url(this);">Staking</a>
+                                <img src="Content/Resource/Header/PNG/pre_top.png" alt="">
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="header-nav-left-menu-items">
+                                <a href="magazine.html">GOMDori Magazine</a>
+                            </li>
+                        </ul>
+                        <div class="menu-mobile-link-bottom">
+                            <div class="menu-mobile-bottom-link-connect">
+                                <a href="" target="_blank" onclick="return yes_redirect_url_connect(this);">
+                                    Connect Wallet
+                                </a>
+                            </div>
+                            <div class="menu-mobile-bottom-link-paper">
+                                <a href="https://gomdori.gitbook.io/gomdori" target="_blank">
+                                    White Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex main-header-nav-right">
+                    <div class="main-header-nav-right-connect">
+                        <a href="" target="_blank" onclick="return yes_redirect_url_connect(this);" target="_blank">
+                            Connect Wallet
+                        </a>
+                    </div>
+                    <div class="main-header-nav-right-paper">
+                        <a href="https://gomdori.gitbook.io/gomdori" target="_blank">
+                            White Paper
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center main-header-nav-right-language">
+                        <div class="main-lang-dropdown">
+                            <img class="img-fluid main-lang-img"
+                                src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
+                            <div class="main-lang-option">
+                                <div data-lang="english"
+                                    language-src="Content/Resource/Header/PNG/header-language-eng.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-eng.png" alt="">
+                                </div>
+                                <div data-lang="korean"
+                                    language-src="Content/Resource/Header/PNG/header-language-kr.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-kr.png" alt="">
+                                </div>
+                                <div data-lang="vietnam"
+                                    language-src="Content/Resource/Header/PNG/header-language-vn.png"
+                                    class="main-lang-option-item">
+                                    <img src="Content/Resource/Header/PNG/header-language-vn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-lg-none align-items-center main-header-nav-right-menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="magazine-detail-body">
+        <div class="star-field"></div>
+        <section class="container magazine-detail-wrap">
+            <div data-animation="animateFadeUp" class="magazine-detail-top">
+                <div class="magazine-detail-top-back">
+                    <a href="magazine.html">
+                        <i class='bx bx-x'></i>
+                    </a>
+                </div>
+                <div class="magazine-detail-top-button">
+                    <div class="magazine-detail-top-button-prev">
+                        <a href="">
+                            <i class='bx bx-chevron-left'></i>
+                        </a>
+                    </div>
+                    <div class="magazine-detail-top-button-next">
+                        <a href="">
+                            <i class='bx bx-chevron-right'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-animation="animateFadeUp" class="magazine-detail-content">
+                <div class="magazine-detail-content-title">
+                    <div class="magazine-detail-content-title-text">
+                        A truly powerful GOMDori has appeared!!
+                    </div>
+                    <div class="magazine-detail-content-title-time">
+                        Jan. 01. 2024
+                    </div>
+                </div>
+                <div class="magazine-detail-content-line">
+                    <img class="img-fluid" src="Content/Resource/Magazine/Stroke.webp" alt="">
+                </div>
+                <div class="magazine-detail-content-social">
+                    <div class="magazine-detail-content-social-left">
+                        <div class="magazine-detail-content-social-items">
+                            <span class="magazine-detail-content-social-number">7</span>
+                            <span class="magazine-detail-content-social-text">Like</span>
+                            <i class='bx bxs-like'></i>
+                        </div>
+                        <div class="magazine-detail-content-social-items">
+                            <span class="magazine-detail-content-social-number">5</span>
+                            <span class="magazine-detail-content-social-text">Like</span>
+                            <i class='bx bx-chat'></i>
+                        </div>
+                    </div>
+                    <div class="magazine-detail-content-social-right">
+                        <div class="magazine-detail-content-social-items">
+                            <span class="magazine-detail-content-social-text">Save</span>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div class="magazine-detail-content-social-items">
+                            <span class="magazine-detail-content-social-text">Share</span>
+                            <i class='bx bx-send'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="magazine-detail-content-wrap">
+                    <img class="img-fluid" src="Content/Resource/Magazine/Picture3.png" alt="">
+                    <br>
+                    <br>
+                    <p>
+                        GOMDori emerged hotly with a powerful ecosystem and business model that was not found in the
+                        Web3.0
+                        world. We have
+                        issued tokens to enrich the lives of Web3 users and are listing them on top tier exchanges to
+                        liquidate tokens faster
+                        than anyone else. GOMDori is designed to break down borders for the lives of global users and
+                        allow
+                        everyone, regardless
+                        of gender or age, to enjoy the crypto world equally. Anyone who holds GOMDori can earn money,
+                        anyone
+                        can receive medical
+                        benefits, and anyone can travel. GOMD Magazine is a window where you can share all the hot and
+                        powerful news of GOMDori,
+                        so we hope you will show a lot of interest
+                    </p>
+                    <br>
+                    <br>
+                    <p>April’s GOMD main members!!!</p>
+                    <p>Name : Sebastian</p>
+                    <p>Position : Project Owner</p>
+                    <img class="img-fluid" src="Content/Resource/Magazine/Picture2.png" alt="">
+                    <br>
+                    <br>
+                    <p style="color: #8a8888;">
+                        PO?
+                    </p>
+                    <p>
+                        Answer - The GOMDori project first started and is based on a company called ‘Gomi Corporation’,
+                        which operates the web2
+                        business well in the background. Gomi Corporation is an e-commerce platform that has already
+                        generated stable sales, and
+                        the investment companies that follow it have invested in major companies quite large. While
+                        running a web2 business, I
+                        was fascinated by Gomi Corporation's business know-how to keep up with the changes of the market
+                        trend and their passion
+                        for web3 and participated in this GOMDori project. Now, the GOMDori project is in the process of
+                        testing to build
+                        several business models, and I joined the GOMDori project as a position "PO”, a position where
+                        we can be more deeply
+                        involved in the project and intuitively see how we grow.
+                    </p>
+                    <br>
+                    <br>
+                    <p style="color: #8a8888;">
+                        Question 2. What did you do for the GOMDori Project in April and what were the results?
+                    </p>
+                    <p>
+                        Answer - The most necessary thing for the current GOMDori project was to transform the external
+                        appearance of the
+                        existing Web2 business into Web3 business. Accordingly, Web3's basic philosophy, the GOMDori
+                        Project, pushed ahead with
+                        the renewal of the website, the face of the GOMDori project, in line with the current trend, to
+                        serve potential users
+                        who will participate in the community with the motto of growing with the community. With the
+                        achievements so far, the
+                        renewal of the website has been able to hear a variety of cheers from community users. In
+                        addition, as we join this
+                        team, we are gradually getting in sync with our team members, and we expect to introduce various
+                        events and promotions
+                        to community users in the future.
+                    </p>
+                    <br>
+                    <br>
+                    <p style="color: #8a8888;">
+                        Question 3. Why are you investing your life in Gomdori?
+                    </p>
+                    <p>
+                        Answer - I've been in the market for years as a private investment in the market for coin(token)
+                        and NFTs. Many
+                        companies issue coin(token) or NFTs and actually use them as marketing methods, but I thought
+                        there was a lack of main
+                        business to support them. However, since Gomi Corporation's web2 business was already making
+                        stable profits, I felt that
+                        sustainability and growth potential were sufficient compared to other projects, so I decided to
+                        invest my time in this
+                        GOMDori project.
+                    </p>
+                    <br>
+                    <br>
+                    <p style="color: #8a8888;">
+                        Question 4. What vision do you think Gomdori has for Web3?
+                    </p>
+                    <p>
+                        Answer - I can say it in one sentence simply. Web3 believes that the decision-making power is
+                        not what the company has,
+                        but that the company presents an overall roadmap, but collects various ideas from community
+                        users and makes decisions
+                        through democratic voting accordingly. This is what I think is the basic philosophy of web3.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container magazine-detail-bottom">
+            <div data-animation="animateFadeUp" class="magazine-detail-bottom-wrap">
+                <div class="magazine-detail-bottom-content">
+                    <div class="magazine-detail-bottom-content-title">
+                        See more interesting news
+                    </div>
+                    <div class="magazine-detail-bottom-content-desc">
+                        Exciting articles are ready for you. Let's go check them out!
+                    </div>
+                    <div class="magazine-detail-bottom-content-button">
+                        <a href="">
+                            I got it
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="wrap-footer-section section-copyright">
+            <div class="section-copyright-title">
+                ⓒ 2024 - Copyright by GOMDori Holdings Inc.
+            </div>
+            <div class="section-copyright-nav">
+                <ul>
+                    <li>
+                        <a href="Content/Legal/TermOfUse.html" target="_blank">Term of Use</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/CookiePolicy.html" target="_blank">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/PrivacyPolicy.html" target="_blank">Privace Policy</a>
+                    </li>
+                    <li>
+                        <a href="Content/Legal/SecurityPolicy.html" target="_blank">Security Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-copyright-logo">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_01.png" alt="">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_02.png" alt="">
+                <img loading="lazy" class="img-fluid" src="Content/Resource/Footer/PNG/footer_03.png" alt="">
+            </div>
+        </section>
+        <section class="main-script">
+            <div class="main-script-wrap">
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous" defer></script>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+                <script src="Content/Script/main.js" defer></script>
+                <script src="Content/Script/magazine.js" defer></script>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

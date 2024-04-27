@@ -1,3 +1,8 @@
+.wrap-gallery-section {
+    position: relative;
+    z-index: 2;
+}
+
 /* #region main page */
 
 .section-dashboard-wrap {
