@@ -4,11 +4,11 @@
 
 .main-body-mainpage {
     height: 100vh;
-    background: #161211;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 /* light star */
@@ -91,6 +91,10 @@
         height: 1px;
     }
 
+}
+
+.main-body-mainpage-wrap {
+    z-index: 3 !important;
 }
 
 /* logo title */
