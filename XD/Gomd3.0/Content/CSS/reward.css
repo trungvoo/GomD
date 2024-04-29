@@ -24,6 +24,7 @@
 .reward-section-button-background {
     background-image: url(../Resource/Reward/button.webp);
     background-size: cover;
+    background-position: center;
     width: 515px;
     height: 82px;
     text-align: center;
@@ -98,5 +99,9 @@
 
     .reward-image2-responsive {
         width: 70%
+    }
+
+    .reward-section-text-button {
+        font-size: 20px;
     }
 }
