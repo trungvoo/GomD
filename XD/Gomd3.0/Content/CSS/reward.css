@@ -1,0 +1,82 @@
+.section-reward-height {
+    width: 60%;
+    margin: auto;
+    height: 100%;
+}
+
+.section-reward-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reward-main-section {
+    background-image: url(../Resource/Reward/BG_rew.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.reward-section-button-background {
+    background-image: url(../Resource/Reward/button.webp);
+    background-size: cover;
+    width: 515px;
+    height: 82px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 12px;
+    border: 2.5px solid #FF661F;
+    box-shadow: 0px 0px 20px 0px rgba(229, 73, 0, 0.90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.reward-section-text-button {
+    color: var(--Gradient-Functional-White, #FFF);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-right: 15px;
+}
+
+.reward-section-first-conent {
+    height: 80%;
+}
+
+.reward-section-first-conent-image1 {
+    width: 45%;
+}
+
+.reward-section-first-conent-image2 {
+    width: 10%;
+}
+
+.reward-section-first-conent-image3 {
+    width: 45%;
+}
+
+.reward-section-second-conent {
+    height: 10%;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .reward-section-first-conent-image1,
+    .reward-section-first-conent-image2,
+    .reward-section-first-conent-image3 {
+        width: 100%;
+        /* Thiết lập chiều rộng của các phần tử con là 100% để chúng nằm trên cùng một hàng */
+    }
+
+    .section-reward-height {
+        width: 100%;
+        height: 1286px;
+    }
+}
