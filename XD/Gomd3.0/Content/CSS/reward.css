@@ -77,11 +77,18 @@
 
 @media only screen and (max-width: 991px) {
 
-    .reward-section-first-conent-image1,
-    .reward-section-first-conent-image2,
-    .reward-section-first-conent-image3 {
-        width: 100%;
-        /* Thiết lập chiều rộng của các phần tử con là 100% để chúng nằm trên cùng một hàng */
+    .reward-section-first-conent {
+        height: 25%;
+    }
+
+    .reward-main-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .reward-section-first-conent-image2 {
+        width: 8%;
     }
 
     .section-reward-height {
@@ -89,19 +96,54 @@
         height: auto;
     }
 
-    .reward-main-section {
+    /* .reward-main-section {
         height: auto;
-    }
+    } */
 
     .reward-image1-responsive {
-        width: 70%
+        width: 100%
     }
 
     .reward-image2-responsive {
-        width: 70%
+        width: 100%
     }
 
     .reward-section-text-button {
         font-size: 20px;
+    }
+
+    .reward-section-buton-responsive {
+        width: auto;
+    }
+
+    .reward-section-text-button {
+        color: var(--Gradient-Functional-White, #FFF);
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+
+    .reward-section-button-background {
+        background-image: url(../Resource/Reward/button.webp);
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        height: 45px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 12px;
+        border: 2.5px solid #FF661F;
+        box-shadow: 0px 0px 20px 0px rgba(229, 73, 0, 0.90);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .reward-section-image-inside-button-responsive {
+        width: 15%;
     }
 }
